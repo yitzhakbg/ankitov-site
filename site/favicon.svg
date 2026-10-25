@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- AnkiTov.org favicon: stacked cards with open organization emblem -->
+  <rect width="64" height="64" rx="12" fill="#0e1f17"/>
+  <rect x="14" y="24" width="36" height="26" rx="4" fill="#2fbf71"/>
+  <rect x="20" y="14" width="36" height="26" rx="4" fill="#8be9b8" opacity="0.9"/>
+  <circle cx="38" cy="27" r="5" fill="#0e1f17"/>
+  <path d="M26 44l6-14 6 14h-3.6l-1-2.6h-2.8L29.6 44H26zm4.6-5.4h1.9l-1-2.7-0.9 2.7z" fill="#062b1a"/>
+</svg>

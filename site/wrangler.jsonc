@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "white-rice-9fa6",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    {
+      "pattern": "ankitov.org",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.ankitov.org",
+      "custom_domain": true
+    }
+  ]
+}

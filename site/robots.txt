@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ankitov.org/sitemap.xml

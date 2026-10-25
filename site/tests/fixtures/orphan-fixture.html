@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>orphan-gate selftest fixture</title>
+<!--
+  Fixture for scripts/check-orphans.py --selftest (T-188 evidence:
+  "intentional-orphan fixture fails the gate").
+
+  The deliberate orphan is width-independent: a hard <br> forces the last
+  rendered line to be exactly the single word "orphan", so the gate must flag
+  it at every viewport width, on every machine, every run.
+
+  The control paragraph also breaks at a <br> but its last line holds two
+  words — the gate must NOT flag it (false-positive tripwire).
+
+  This directory is excluded from the deployed bundle via .assetsignore.
+-->
+<style>
+  body { font: 16px/1.5 monospace; margin: 0; padding: 24px; }
+</style>
+</head>
+<body>
+  <p id="deliberate-orphan">The quick brown fox jumps<br>orphan</p>
+  <p id="clean-control">alpha bravo charlie delta echo<br>foxtrot golf</p>
+</body>
+</html>

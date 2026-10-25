@@ -1,0 +1,70 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright + Chromium (orphan gate runtime)
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Orphan gate — detector selftest
+        run: python3 site/scripts/check-orphans.py --selftest
+      - name: Orphan gate — site pages
+        run: python3 site/scripts/check-orphans.py --site site
+      - name: Orphan gate — waiting overlay
+        run: python3 site/scripts/check-orphans.py --site waiting
+      - name: Link check — site pages
+        run: python3 site/scripts/check-links.py --site site
+      - name: Link check — waiting overlay
+        run: python3 site/scripts/check-links.py --site waiting
+
+  deploy:
+    needs: checks
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright + Chromium (deploy.sh runs the orphan gate itself)
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Deploy to Cloudflare Workers (waiting overlay until launch, site after)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ "${{ vars.SITE_LAUNCH_ENABLED }}" = "true" ]; then
+            echo "SITE_LAUNCH_ENABLED=true → deploying the real site (site/)."
+            bash site/deploy.sh
+          else
+            echo "Pre-launch doctrine: deploying the waiting overlay (waiting/)."
+            echo "At launch: set the SITE_LAUNCH_ENABLED repo variable to true."
+            bash waiting/deploy-waiting.sh
+          fi
+      - name: Post-deploy curl verification
+        run: |
+          sleep 10
+          code=$(curl -s -o /dev/null -w '%{http_code}' https://ankitov.org/)
+          echo "ankitov.org → HTTP $code"
+          [ "$code" = "200" ]
+          curl -s -o /dev/null -w 'deploy.sh probe → %{http_code} (expect 404)\n' https://ankitov.org/deploy.sh

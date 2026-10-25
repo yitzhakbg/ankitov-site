@@ -1,0 +1,11 @@
+# Files in this directory that must NOT be published as site assets.
+# (Workers static assets honors .assetsignore like .gitignore.)
+deploy.sh
+serve-nocache.py
+scripts/
+tests/
+img/overview__*.mp4
+wrangler.jsonc
+.assetsignore
+.wrangler
+.DS_Store
