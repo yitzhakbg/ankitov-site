@@ -383,6 +383,7 @@ h1 { margin: 0 0 0.5rem; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.15; t
   margin-block: 1rem;
 }
 h2 { margin: 0 0 0.6rem; font-size: 1.25rem; }
+h2, h3 { text-wrap: balance; }
 .block p { margin: 0 0 0.5rem; color: var(--muted); }
 .block p:last-child { margin-bottom: 0; }
 
