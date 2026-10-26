@@ -5,6 +5,7 @@ serve-nocache.py
 scripts/
 tests/
 img/overview__*.mp4
+SETUP-CHECKLIST.md
 wrangler.jsonc
 .assetsignore
 .wrangler
