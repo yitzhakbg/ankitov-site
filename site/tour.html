@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov Project Tour — end to end, for developers and contributors</title>
+  <meta name="description" content="A guided tour of the AnkiTov project: the five-layer architecture, the Interleaved Mastery Pipeline, zero-install browser practice, self-hosted sync, and how to run it yourself.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov Project Tour">
+  <meta property="og:description" content="A guided end-to-end tour of the open-source AnkiTov project for developers and contributors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/tour.html">
+  <meta property="og:image" content="https://ankitov.org/img/tour/community-infographic.png">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/community.html" class="nav-link">Community</a>
+      <a href="/tour.html" class="nav-link is-active">Tour</a>
+      <a href="/blog.html" class="nav-link">Notes</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">Project Tour &bull; Free &amp; Open Source</p>
+      <h1>The <span class="nb">whole system</span>, end to end.</h1>
+      <p class="hero-sub">A guided tour for developers and contributors: what AnkiTov is, how every
+        piece works, and how to run it yourself — from the <span class="nb">five-layer</span>
+        architecture to the <span class="nb">browser-streamed</span> practice session.</p>
+      <div class="cta-group">
+        <a href="#map" class="cta">Start with the one-picture map &blacktriangleright;</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov" class="cta-secondary" target="_blank" rel="noopener">Browse the source &rarr;</a>
+      </div>
+    </section>
+
+    <section class="block" id="map">
+      <h2>The system on one page</h2>
+      <p>Every major piece of AnkiTov and how they connect: the public surfaces, the product
+        tiers, the <span class="nb">inside-out</span> architecture, the student journey, and
+        where the software runs.</p>
+      <img src="/img/tour/community-infographic.png"
+           alt="AnkiTov community tour infographic: architecture, pipeline, streaming, sync, roadmap"
+           loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #cbd5e1;">
+    </section>
+
+    <section class="block" id="materials">
+      <h2>The tour, in every format</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Watch the video tour</h3>
+          <p>A narrated walkthrough of the entire project — architecture, pipeline, streaming,
+            sync, and how to contribute. Published on our YouTube channel.</p>
+          <p><a href="https://www.youtube.com/@AnkiTovApp" target="_blank" rel="noopener">Watch on YouTube &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>Flip the slideshow</h3>
+          <p>The introductory slide deck: the problem, the doctrine, the architecture, the
+            student journey, the roadmap, and where to plug in.</p>
+          <p><a href="/img/tour/community-slides.pdf">Open the slides (PDF) &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>Keep the infographic</h3>
+          <p>The <span class="nb">one-picture</span> master map — handy for onboarding new
+            contributors or pinning to a team wall.</p>
+          <p><a href="/img/tour/community-infographic.png">View full size &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>Read the guide</h3>
+          <p>The written <span class="nb">end-to-end</span> tour: the same story in depth, with
+            the glossary of every term — the fastest way to learn the project's vocabulary.</p>
+          <p><a href="/tour-guide.md">Read the guide &rarr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deeper">
+      <h2>Go deeper</h2>
+      <ul class="bullets">
+        <li><strong>Source code:</strong> <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">github.com/yitzhakbg/AnkiTov</a> — AGPL-3.0, with CC0 seed decks.</li>
+        <li><strong>Documentation:</strong> the mdBook site covers architecture, the IMP, and the dev guide.</li>
+        <li><strong>Run it:</strong> <span class="nb"><code>bash scripts/bootstrap.sh</code></span>, then
+          <span class="nb"><code>cd backend &amp;&amp; cargo run start</code></span>.</li>
+        <li><strong>Explore it:</strong> the dashboard
+          (<span class="nb"><code>/dashboard</code></span>) and live API docs
+          (<span class="nb"><code>/scalar</code></span>) <span class="nb">ship with the server</span>.</li>
+        <li><strong>Community:</strong> <a href="/community.html">deck templates, curriculum mappings, and pilot help</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/about.html">About &amp; Mission</a>
+      <a href="/community.html">Community</a>
+      <a href="/tour.html">Tour</a>
+      <a href="/blog.html">Notes</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization. Dedicated to open, <span class="nb">research-grounded</span> learning.</p>
+    <p class="footer-note">No cookies &bull; No trackers &bull; <span class="nb">Privacy-first</span> static delivery</p>
+  </footer>
+</body>
+</html>
