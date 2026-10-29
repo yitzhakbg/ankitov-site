@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov प्रोजेक्ट टूर — शुरू से अंत तक, डेवलपर और योगदानकर्ताओं के लिए</title>
+  <meta name="description" content="AnkiTov प्रोजेक्ट का निर्देशित टूर: पाँच-परत आर्किटेक्चर, Interleaved Mastery Pipeline, बिना-इंस्टॉल ब्राउज़र अभ्यास, सेल्फ़-होस्टेड सिंक, और इसे ख़ुद कैसे चलाएँ।">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov प्रोजेक्ट टूर">
+  <meta property="og:description" content="ओपन-सोर्स AnkiTov प्रोजेक्ट का निर्देशित एंड-टू-एंड टूर — डेवलपर और योगदानकर्ताओं के लिए।">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/tour.html">
+  <meta property="og:image" content="https://ankitov.org/img/tour/community-infographic.png">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/hi/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/hi/about.html" class="nav-link">परिचय</a>
+      <a href="/hi/community.html" class="nav-link">समुदाय</a>
+      <a href="/hi/tour.html" class="nav-link is-active">टूर</a>
+      <a href="/hi/blog.html" class="nav-link">नोट्स</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/tour.html">English</option><option value="/fr/tour.html">Français</option><option value="/es/tour.html">Español</option><option value="/de/tour.html">Deutsch</option><option value="/it/tour.html">Italiano</option><option value="/pt/tour.html">Português</option><option value="/ru/tour.html">Русский</option><option value="/zh/tour.html">中文</option><option value="/ja/tour.html">日本語</option><option value="/ko/tour.html">한국어</option><option value="/hi/tour.html" selected>हिन्दी</option><option value="/ar/tour.html">العربية</option><option value="/he/tour.html">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">प्रोजेक्ट टूर &bull; मुफ़्त और ओपन सोर्स</p>
+      <h1><span class="nb">पूरा सिस्टम</span>, शुरू से आख़िर तक।</h1>
+      <p class="hero-sub">डेवलपर और योगदानकर्ताओं के लिए निर्देशित टूर: AnkiTov क्या है, हर हिस्सा
+        कैसे काम करता है, और इसे ख़ुद कैसे चलाएँ — <span class="nb">पाँच-परत</span>
+        आर्किटेक्चर से लेकर <span class="nb">ब्राउज़र-स्ट्रीम्ड</span> अभ्यास सेशन तक।</p>
+      <div class="cta-group">
+        <a href="#map" class="cta">एक-तस्वीर वाले मैप से शुरुआत करें &blacktriangleright;</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov" class="cta-secondary" target="_blank" rel="noopener">सोर्स ब्राउज़ करें &rarr;</a>
+      </div>
+    </section>
+
+    <section class="block" id="map">
+      <h2>पूरा सिस्टम एक पन्ने पर</h2>
+      <p>AnkiTov का हर बड़ा हिस्सा और वे आपस में कैसे जुड़ते हैं: सार्वजनिक सतहें, प्रोडक्ट
+        टियर, <span class="nb">अंदर-से-बाहर</span> आर्किटेक्चर, छात्र का सफ़र, और
+        सॉफ़्टवेयर कहाँ चलता है।</p>
+      <img src="/img/tour/community-infographic.png"
+           alt="AnkiTov समुदाय टूर इन्फ़ोग्राफ़िक: आर्किटेक्चर, पाइपलाइन, स्ट्रीमिंग, सिंक, रोडमैप"
+           loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #cbd5e1;">
+    </section>
+
+    <section class="block" id="materials">
+      <h2>टूर, हर रूप में</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>वीडियो टूर देखें</h3>
+          <p>पूरे प्रोजेक्ट की वर्णन-सहित वॉकथ्रू — आर्किटेक्चर, पाइपलाइन, स्ट्रीमिंग,
+            सिंक, और योगदान कैसे दें। हमारे YouTube चैनल पर प्रकाशित।</p>
+          <p><a href="https://www.youtube.com/@AnkiTovApp" target="_blank" rel="noopener">YouTube पर देखें &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>स्लाइडशो पलटें</h3>
+          <p>परिचयात्मक स्लाइड डेक: समस्या, सिद्धांत, आर्किटेक्चर,
+            छात्र का सफ़र, रोडमैप, और कहाँ जुड़ें।</p>
+          <p><a href="/img/tour/community-slides.pdf">स्लाइड खोलें (PDF) &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>इन्फ़ोग्राफ़िक सँभाल लें</h3>
+          <p><span class="nb">एक-तस्वीर</span> वाला मास्टर मैप — नए योगदानकर्ताओं को ऑनबोर्ड करने
+            या टीम की दीवार पर टाँगने के लिए उपयोगी।</p>
+          <p><a href="/img/tour/community-infographic.png">पूरा आकार देखें &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>गाइड पढ़ें</h3>
+          <p>लिखी हुई <span class="nb">एंड-टू-एंड</span> टूर: वही कहानी गहराई से, हर शब्द की
+            शब्दावली के साथ — प्रोजेक्ट की भाषा सीखने का सबसे तेज़ रास्ता।</p>
+          <p><a href="/tour-guide.md">गाइड पढ़ें &rarr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deeper">
+      <h2>और गहराई में</h2>
+      <ul class="bullets">
+        <li><strong>सोर्स कोड:</strong> <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">github.com/yitzhakbg/AnkiTov</a> — AGPL-3.0, CC0 सीड डेक के साथ।</li>
+        <li><strong>दस्तावेज़ीकरण:</strong> mdBook साइट आर्किटेक्चर, IMP और डेव गाइड कवर करती है।</li>
+        <li><strong>चलाइए:</strong> <span class="nb"><code>bash scripts/bootstrap.sh</code></span>, फिर
+          <span class="nb"><code>cd backend &amp;&amp; cargo run start</code></span>।</li>
+        <li><strong>एक्सप्लोर करें:</strong> डैशबोर्ड
+          (<span class="nb"><code>/dashboard</code></span>) और लाइव API डॉक्स
+          (<span class="nb"><code>/scalar</code></span>) <span class="nb">सर्वर के साथ ही आते हैं</span>।</li>
+        <li><strong>समुदाय:</strong> <a href="/hi/community.html">डेक टेम्पलेट, पाठ्यक्रम-मैपिंग और पायलट मदद</a>।</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/hi/">होम</a>
+      <a href="/hi/about.html">परिचय और मिशन</a>
+      <a href="/hi/community.html">समुदाय</a>
+      <a href="/hi/tour.html">टूर</a>
+      <a href="/hi/blog.html">नोट्स</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization. ओपन, <span class="nb">रिसर्च-आधारित</span> सीखने के प्रति समर्पित।</p>
+    <p class="footer-note">कोई कुकीज़ नहीं &bull; कोई ट्रैकर नहीं &bull; <span class="nb">प्राइवेसी-पहले</span> स्टैटिक डिलीवरी</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTovプロジェクトツアー — 開発者とコントリビューターのためのエンドツーエンド解説</title>
+  <meta name="description" content="AnkiTovプロジェクトのガイド付きツアー：5層アーキテクチャ、インターリーブ習熟パイプライン（IMP）、インストール不要のブラウザ練習、セルフホスト同期、そして自分で動かす方法。">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTovプロジェクトツアー">
+  <meta property="og:description" content="開発者とコントリビューターのための、オープンソースAnkiTovプロジェクトのエンドツーエンドガイド付きツアー。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/tour.html">
+  <meta property="og:image" content="https://ankitov.org/img/tour/community-infographic.png">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/ja/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/ja/about.html" class="nav-link">概要</a>
+      <a href="/ja/community.html" class="nav-link">コミュニティ</a>
+      <a href="/ja/tour.html" class="nav-link is-active">ツアー</a>
+      <a href="/ja/blog.html" class="nav-link">ノート</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/tour.html">English</option><option value="/fr/tour.html">Français</option><option value="/es/tour.html">Español</option><option value="/de/tour.html">Deutsch</option><option value="/it/tour.html">Italiano</option><option value="/pt/tour.html">Português</option><option value="/ru/tour.html">Русский</option><option value="/zh/tour.html">中文</option><option value="/ja/tour.html" selected>日本語</option><option value="/ko/tour.html">한국어</option><option value="/hi/tour.html">हिन्दी</option><option value="/ar/tour.html">العربية</option><option value="/he/tour.html">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">プロジェクトツアー &bull; フリー&amp;オープンソース</p>
+      <h1><span class="nb">システム全体</span>を、端から端まで。</h1>
+      <p class="hero-sub">開発者とコントリビューター向けのガイド付きツアー：AnkiTovとは何か、
+        各パーツがどう動くか、どう自分で動かすか —— <span class="nb">5層</span>の
+        アーキテクチャから<span class="nb">ブラウザストリーミング</span>の練習セッションまで。</p>
+      <div class="cta-group">
+        <a href="#map" class="cta">1枚図のマップから始める &blacktriangleright;</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov" class="cta-secondary" target="_blank" rel="noopener">ソースを読む &rarr;</a>
+      </div>
+    </section>
+
+    <section class="block" id="map">
+      <h2>1ページで見るシステム</h2>
+      <p>AnkiTovの主要パーツとそのつながり：公開サーフェス、プロダクト
+        階層、<span class="nb">内から外へ</span>のアーキテクチャ、生徒の旅、そして
+        ソフトウェアが動く場所。</p>
+      <img src="/img/tour/community-infographic.png"
+           alt="AnkiTovコミュニティツアーインフォグラフィック：アーキテクチャ、パイプライン、ストリーミング、同期、ロードマップ"
+           loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #cbd5e1;">
+    </section>
+
+    <section class="block" id="materials">
+      <h2>あらゆる形式のツアー</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>動画ツアーを見る</h3>
+          <p>プロジェクト全体のナレーション付きウォークスルー —— アーキテクチャ、パイプライン、ストリーミング、
+            同期、そして貢献の方法。私たちのYouTubeチャンネルで公開中。</p>
+          <p><a href="https://www.youtube.com/@AnkiTovApp" target="_blank" rel="noopener">YouTubeで見る &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>スライドショーをめくる</h3>
+          <p>イントロのスライドデッキ：問題、ドクトリン、アーキテクチャ、
+            生徒の旅、ロードマップ、そして参加できる場所。</p>
+          <p><a href="/img/tour/community-slides.pdf">スライドを開く（PDF） &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>インフォグラフィックを手元に</h3>
+          <p><span class="nb">1枚図</span>のマスターマップ —— 新しいコントリビューターの
+            オンボーディングやチームの壁への貼り出しに便利。</p>
+          <p><a href="/img/tour/community-infographic.png">フルサイズで表示 &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>ガイドを読む</h3>
+          <p>書かれた<span class="nb">エンドツーエンド</span>ツアー：同じ物語を深く、
+            あらゆる用語の用語集付きで —— プロジェクトの語彙を習得する最短ルート。</p>
+          <p><a href="/tour-guide.md">ガイドを読む &rarr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deeper">
+      <h2>さらに深く</h2>
+      <ul class="bullets">
+        <li><strong>ソースコード：</strong> <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">github.com/yitzhakbg/AnkiTov</a> —— AGPL-3.0ライセンス、CC0シードデッキ付き。</li>
+        <li><strong>ドキュメント：</strong>mdBookサイトでアーキテクチャ、IMP、開発ガイドをカバー。</li>
+        <li><strong>動かす：</strong>まず<span class="nb"><code>bash scripts/bootstrap.sh</code></span>、次に
+          <span class="nb"><code>cd backend &amp;&amp; cargo run start</code></span>.</li>
+        <li><strong>探検する：</strong>ダッシュボード
+          (<span class="nb"><code>/dashboard</code></span>）とライブAPIドキュメント
+          (<span class="nb"><code>/scalar</code></span>）は<span class="nb">サーバーに同梱</span>。</li>
+        <li><strong>コミュニティ：</strong> <a href="/ja/community.html">デッキテンプレート、カリキュラムのマッピング、パイロット支援</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/about.html">概要・ミッション</a>
+      <a href="/ja/community.html">コミュニティ</a>
+      <a href="/ja/tour.html">ツアー</a>
+      <a href="/ja/blog.html">ノート</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization。オープンで<span class="nb">研究に裏打ちされた</span>学びの実現を目指しています。</p>
+    <p class="footer-note">Cookieなし &bull; トラッカーなし &bull; <span class="nb">プライバシーファースト</span>の静的配信</p>
+  </footer>
+</body>
+</html>

@@ -20,11 +20,31 @@ Doctrine for FIXING orphans — do not fight this gate by other means:
   * NEVER bare ``&nbsp;`` — Chromium breaks AT nbsp under ``text-wrap:pretty``
     (verified 2026-10-25)
 
+SVG foreign-content guard (T-198):
+  The HTML parser ejects HTML-namespace tags (``<span>``, ``<div>``, ``<p>``,
+  ...) out of SVG foreign content — everything after them inside the ``<svg>``
+  silently becomes ordinary HTML, destroying the chart (P0-1, site critique
+  2026-10-26: ``<span class="nb">`` inside ``<svg><text>`` ejected all six
+  ``.decay-label`` annotations). Two independent layers:
+    * static source scan — any HTML breakout tag inside ``<svg>`` source is a
+      finding. A DOM-only check cannot see the cause: after parsing, the
+      offending tag is an ordinary HTML sibling of the ``<svg>``. Content
+      inside ``<foreignObject>`` is a legal HTML integration point and is
+      exempt; comments and CDATA sections are skipped.
+    * DOM check per page x width — every ``.decay-label`` must live inside an
+      ``<svg>`` (``ownerSVGElement`` set) and render within its bounding box,
+      and no HTML-namespace span/div/p may sit inside an ``<svg>`` outside a
+      ``<foreignObject>``.
+
 Self-test (proves the detector without touching the real site):
   python3 scripts/check-orphans.py --selftest
   Serves ``tests/fixtures/orphan-fixture.html`` — an intentional orphan plus a
   control paragraph — and expects exactly one finding (the orphan, at every
-  tested width) and nothing else. Exit 0 = detector sane.
+  tested width) and nothing else. Also serves
+  ``tests/fixtures/svg-breakout-fixture.html`` (T-198): the ``<span>`` inside
+  ``<svg>`` must be flagged by the static layer, the ejected ``.decay-label``s
+  by the DOM layer, and the control ``<svg>`` must stay clean.
+  Exit 0 = detector sane.
 
 Runtime: playwright + Chromium. If this python lacks playwright and ``uv`` is
 available, the script re-execs itself under ``uv run --with playwright``

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov — 학생이 앞서 나가도록. 교실을 위한 간격 반복 학습.</title>
+  <meta name="description" content="학생은 월요일에 개념을 배우고 금요일 시험을 통과하지만, 30일 뒤에는 80%가 사라집니다. AnkiTov는 학생들이 신뢰하는 간격 반복 시스템 Anki를 초·중·고교에 맞춰 제공합니다: 학급, 교사 콘솔, 그리고 구조로 완성하는 프라이버시. 교직원에게 거의 부담이 없습니다. 추가 수업 시간도 없습니다.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov — 학생이 앞서 나가도록. 교실을 위한 간격 반복 학습.">
+  <meta property="og:description" content="9월에 가르친 내용이 5월에도 남아 있습니다. AnkiTov가 교실에 Anki를 제공합니다 — 교직원 부담은 거의 없고, 추가 수업 시간도 없으며, 몇 분 만에 시작할 수 있습니다. 무료 오픈 소스.">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/ko/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/ko/about.html" class="nav-link">소개</a>
+      <a href="/ko/community.html" class="nav-link">커뮤니티</a>
+      <a href="/ko/tour.html" class="nav-link">둘러보기</a>
+      <a href="/ko/blog.html" class="nav-link">노트</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/">中文</option><option value="/ja/">日本語</option><option value="/ko/" selected>한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/">العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">커뮤니티 &amp; 교육 이니셔티브 &bull; 학교를 위한 무료 &amp; 공개 프로젝트</p>
+      <h1>학생이 <span class="nb">앞서 나가도록</span> &mdash; 그리고 <span class="nb">계속 앞서 있도록</span> 도와주세요.</h1>
+      <p class="hero-kicker">9월에 가르친 내용이 5월에도 그대로 남아 있습니다.</p>
+      <p class="hero-sub">
+        AnkiTov는 수많은 의대생과 다국어 학습자가 신뢰해 온 간격 반복 엔진
+        <strong>Anki</strong>를 초·중·고교 교실에 맞춰 제공합니다. 학급 명단,
+        커리큘럼 덱, 교사 콘솔, 그리고
+        <span class="nb">구조로 완성되는 프라이버시.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">교직원에게 거의 부담 없음</span>
+        <span class="hero-badge">추가 수업 시간 없음</span>
+        <span class="hero-badge">몇 분 만에 바로 가동</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta"><span class="nb">60초</span> 개요 영상 보기 &blacktriangleright;</a>
+        <a href="#how-it-works" class="cta-secondary">3단계로 보는 수업 운영</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">AnkiTov 받기 &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">교실의 현실</p>
+        <h2>문제의 실체, 있는 그대로</h2>
+        <p class="section-lead">
+          학생은 월요일에 개념을 배우고 금요일 퀴즈를 통과합니다 &mdash; 그리고
+          <strong><span class="nb">30일</span> 뒤에는 최대 80%가 사라집니다.</strong> 교사가
+          가르치지 않았거나 학생이 노력하지 않아서가 아닙니다. 시점을 정해 둔 인출이 없으면
+          인간의 기억은 원래 그렇게 흐릅니다.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>가르치고, 시험 보고, 증발합니다</h3>
+          <p>학생은 목요일 밤에 벼락치기를 하고 금요일에 통과하지만, 한 달 뒤에는 머리가 하얘집니다 &mdash; 바로 다음 단원이 그 기초 위에 쌓이는 시점에 말입니다.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3><span class="nb">다시 가르치는</span> 제자리 걸음</h3>
+          <p>소중한 수업 시간 수 주가, 9월에 이미 &ldquo;다뤘던&rdquo; 내용을 <span class="nb">다시 설명하는</span> 데 사라집니다. 진도는 밀리고, 심화 주제는 잘려나갑니다.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>검증된 도구는 왜 <span class="nb">초·중·고교</span>에 닿지 못했을까</h3>
+          <p>인지과학은 수십 년 전에 간격 반복(SRS)으로 기억 유지 문제를 해결했습니다. 그러나 날것의 Anki 같은 개인용 성인 도구는 <span class="nb">중학교 2학년 학생 30명</span>이나, 학교 커리큘럼이나, 교사의 <span class="nb">45분짜리</span> 준비 시간을 위해 만들어진 것이 아니었습니다.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>상용 에듀테크는 문제를 더 키웁니다</h3>
+          <p><span class="nb">좌석당</span> 구독료, 학생 이메일 <span class="nb">가입 절차</span>, 광고 네트워크, <span class="nb">제3자</span> 클라우드로 흘러가는 학습 기록 &mdash; <span class="nb">학교 관리자에게는</span> 법적·윤리적 지뢰밭입니다.</p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>학교가 기억의 과학을 거부한 것이 아닙니다.</strong>
+          교사의 시간, 학급 운영, 학생 프라이버시를 존중하는 교실 인프라가 없었을
+          뿐입니다. <em>AnkiTov는 바로 그 <span class="nb">빠진 층을 채우기 위해</span> 만들어졌습니다.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">60초</span> 개요 영상.</strong>
+          벼락치기가 왜 잊히는지, 간격을 둔 인출이 어떻게 지식을 붙잡아 두는지, 그리고 AnkiTov가 실제 학교에서 어떻게 돌아가는지 &mdash; 학생 계정도 추적도 전혀 없이.
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="애니메이션 차트: 복습이 없으면 기억은 빠르게 흐리고, 짧은 복습을 할 때마다 기억이 회복되어 시험 당일에도 내용이 남아 있습니다.">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">학생이 기억하는 양</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">시간 &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">1일차</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">1주차</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">3주차</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">시험</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">짧은 복습</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">짧은 복습</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">짧은 복습</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">AnkiTov 사용: 기억 유지</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">미사용: 대부분 소실</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">수업 진행</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>AnkiTov로 짧게 복습할 때</span>
+          <span class="key"><span class="swatch without"></span>한 번 벼락치기, 그 후엔 없음</span>
+          <span class="key"><span class="swatch review"></span><span class="nb">잠깐의 복습</span>이면 잊힘을 되돌립니다</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">노력 없는 도입</p>
+        <h2>AnkiTov의 해결 방식 &mdash; 몇 개월이 아니라 몇 분 만에</h2>
+        <p class="section-lead section-lead--full">
+          교실의 현실을 전제로 설계되었습니다:<br>
+          <span class="nb">준비할 추가 수업 없음,</span>
+          <span class="nb">개별 계정 문제를 다룰 일 없음,</span> 그리고
+          <span class="nb">가르치는 방식의 변화도 없음.</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">1단계 &bull; 몇 분이면 완료</div>
+          <h3>덱을 넣고 <span class="nb">6글자</span> <span class="nb">수업 코드</span>를 공유</h3>
+          <p>표준 <span class="nb">Anki <code>.apkg</code> 덱</span>이면 무엇이든 가져오거나 &mdash; 공개 커리큘럼 시드 덱으로 <span class="nb">바로 시작</span>하세요. 클릭 <span class="nb">두 번으로</span> 학급에 배정합니다. 학생 이메일, 비밀번호, <span class="nb">IT 티켓도 필요 없습니다.</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">2단계 &bull; 하루 몇 분</div>
+          <h3>집에서, 버스 안에서, 또는 <span class="nb">15분 미만</span>짜리 <span class="nb">수업 도입 활동</span>으로</h3>
+          <p>학생은 집에서, 또는 출석을 부르는 동안 <span class="nb">도입 시간</span>에 복습합니다 &mdash; 하루 <span class="nb">15분 미만</span>입니다.<br>FSRS 스케줄러는 잊혀져 가는 카드만 골라 보여줍니다 &mdash; 9월의 기초와 이번 주 단원을 자연스럽게 엮어 줍니다.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">3단계 &bull; 수업 전 가볍게 확인</div>
+          <h3><span class="nb">금요일 쪽지시험</span> 전에 <span class="nb">학급 전체</span>의 빈틈을 발견</h3>
+          <p>교사 콘솔은 개별 복습 기록을 실시간 기억 현황으로 바꿔 보여줍니다. 학급의 절반이 특정 공식이나 어휘 세트에서 흔들리면 바로 보입니다 &mdash; <span class="nb">2주간의 재설명</span> 대신 잠깐 짚어주면 됩니다.</p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">바로 투입 가능한</span> 공개 시드 덱 (CC0 퍼블릭 도메인 &bull; 덱당 105장):</strong>
+          <span>학급 파일럿에 그대로 넣거나 Anki에서 고쳐 쓰세요:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">수학 정의 (영어 &amp; 히브리어)</span>
+          <span class="seed-pill">과학 용어 (영어 &amp; 히브리어)</span>
+          <span class="seed-pill">역사: 연도와 인물 (영어 &amp; 프랑스어)</span>
+          <span class="seed-pill">영어 학술 어휘</span>
+          <span class="seed-pill">+ 모든 표준 Anki <code>.apkg</code> 덱</span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>간격 연습이 없을 때</h3>
+          <ul>
+            <li>목요일 벼락치기 &rarr; 금요일 통과 &rarr; 다음 달엔 망각</li>
+            <li>중간·기말 범위 정리에 수주 분 손실</li>
+            <li>뒤처진 학생이 누구인지는 시험을 <em>채점한 뒤에야</em> 알게 됩니다</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>AnkiTov를 수업 곁에 둘 때</h3>
+          <ul>
+            <li>하루 몇 분으로 모든 <span class="nb">이전 단원</span>이 <span class="nb">1년 내내 생생하게</span> 유지됩니다</li>
+            <li>추가 수업 시간 0 &mdash; 수업 옆에서 조용히 돌아갑니다</li>
+            <li>학생은 기초가 이미 익숙한 상태로 심화 단원에 들어섭니다</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>모든 학교를 위한 세 가지 보장</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3><span class="nb">겹겹이 쌓이는</span> 기억 유지</h3>
+          <p>최신 FSRS 스케줄링이 움직입니다. 학생은 개념이 잊히기 직전에 복습합니다 &mdash; <span class="nb">단기</span> 벼락치기를 오래가는, <span class="nb">1년 내내 이어지는 숙달로</span> 바꿉니다.</p>
+        </div>
+        <div class="pillar">
+          <h3>구조가 만드는 <span class="nb">프라이버시</span></h3>
+          <p>학생 개인 식별 정보 0, 트래커 0, 텔레메트리 0, 외부 클라우드 호출 0 &mdash; 학생 데이터는 학교 밖으로 나가지 않습니다. 약관의 작은 글씨가 아니라 설계로 완성하는 컴플라이언스입니다.</p>
+        </div>
+        <div class="pillar">
+          <h3>개방 포맷, <span class="nb">종속성 없음</span></h3>
+          <p>덱은 표준 <code>.apkg</code> 파일 &mdash; 열린 Anki 생태계 포맷입니다. 커리큘럼 자료와 학습 기록은 영원히 학교의 것입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>학교 안 모든 역할을 위해</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>교사와 <span class="nb">교과부장</span></h3>
+          <p>커리큘럼 속도에 맞춰 카드를 공개하고, 어떤 개념에 <span class="nb">잠깐의 정리</span>가 필요한지 확인하고, 학생이 진짜 유창함을 쌓는 과정을 지켜보세요 &mdash; <strong>준비 시간에는 거의 부담이 없고, 추가 수업 시간도 요구하지 않습니다.</strong></p>
+        </div>
+        <div class="block">
+          <h3>교장과 <span class="nb">IT 관리자</span></h3>
+          <p>이미 갖춘 인프라 위에 몇 분 만에 배치됩니다. 학생 이메일이나 개인 식별 정보를 수집하지 않고, 검증할 <span class="nb">제3자</span> 데이터 처리자도 없으며, 예산을 갉아먹는 <span class="nb">좌석당</span> SaaS 갱신비도 없습니다.</p>
+        </div>
+        <div class="block">
+          <h3>학생</h3>
+          <p>시험 <span class="nb">전날 밤의</span> 벼락치기를, 실제로 붙는 <span class="nb">하루 몇 분</span>짜리 차분한 습관으로 바꾸세요. 모든 시험에 내용을 완전히 알고 들어섭니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>교실 현장의 사용 경험</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="AnkiTov 파일럿 — 수학 정의 덱의 신규·학습·기한 카드 수가 보이는 덱 브라우저" loading="lazy">
+          <figcaption>
+            <strong>1. 커리큘럼 덱 라이브러리</strong>
+            핵심 교과에 맞춘 <span class="nb">바로 쓸 수 있는</span> 다국어 시드 덱. 표준 Anki <code>.apkg</code> 파일 &mdash; 가져오기 쉽고, 교과 내 공유와 확장도 쉽습니다.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="단어 grievous의 정의와 정답, 다음 간격이 표시된 Again·Good 버튼이 보이는 카드" loading="lazy">
+          <figcaption>
+            <strong>2. <span class="nb">방해 없는</span> 학생 복습</strong>
+            두 개의 단순한 버튼(<em>Again</em> / <em>Good</em>)으로 깔끔한 키오스크 복습, 그 아래에는 엄격한 FSRS 기억 스케줄링이 깔립니다.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="학급, 학생, 시드 덱, 실시간 학급 기억 히트맵이 보이는 교사 IMP 콘솔" loading="lazy">
+          <figcaption>
+            <strong>3. 교사 콘솔 &amp; 실시간 기억 맵</strong>
+            학생 복습 기록을 <span class="nb">학급 전체</span> 기억 히트맵으로 모아 보여줍니다 &mdash; 금요일 쪽지시험 전에 잊혀지는 개념을 먼저 발견합니다.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="정답이 공개된 히브리어 오른쪽→왼쪽 수학 카드와 Again·Good 버튼" loading="lazy">
+          <figcaption>
+            <strong>4. 다국어·RTL <span class="nb">기본 지원</span></strong>
+            영어, 히브리어, 아랍어, 프랑스어, 스페인어 등 13개 로캘 &mdash; <span class="nb">오른쪽→왼쪽</span> 문자와 수학 기호도 별도 설정 없이 깔끔하게 렌더링됩니다.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">IT 담당자와 학교 리더를 위해</p>
+      <h2><span class="nb">학교 파일럿</span> 운영에 필요한 것</h2>
+      <div class="grid-3">
+        <div>
+          <h3>이미 <span class="nb">갖춘</span> 하드웨어면 충분</h3>
+          <p>학교의 Mac 한 대, Windows PC, 또는 LAN 안의 리눅스 장비에서 돌아갑니다 &mdash; 월 $5 개인 VPS로도 충분합니다. 학교 <span class="nb">Wi-Fi에서</span> 동시 접속 학생 200명 이상을 거뜬히 감당합니다.</p>
+        </div>
+        <div>
+          <h3>단일 바이너리, <span class="nb">의존성 없음</span></h3>
+          <p>SQLite가 내장된 <span class="nb">단독 실행</span> 파일 하나. 외부 데이터베이스 서버도, Docker도, 외부 인터넷 연결도 필요 없습니다.</p>
+        </div>
+        <div>
+          <h3><span class="nb">PII 제로</span> 감사 자세</h3>
+          <p>학생은 익명의 <span class="nb">6글자</span> 수업 코드로 참여합니다. 학생 이름, 이메일, 기기 식별자는 건물 밖으로 나가지 않습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>인지과학은 이미 답을 냈습니다. 학습자들이 <span class="nb">Anki에 대해</span> 하는 말입니다.</h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>&ldquo;Anki에 대한 내 열정을 공정함이라는 체면 좋은 가면 뒤에 숨기려 하지 않겠습니다. Anki는 내 인생의 중요한 부분입니다.&rdquo;</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>, <em>Augmenting <span class="nb">Long-term Memory</span></em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>&ldquo;간격 반복 기억 시스템은 기억을 선택할 수 있는 것으로 만듭니다.&rdquo;</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>, <em>Working notes</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>&ldquo;이 앱은 제 인생을 바꿨습니다. Anki 덕분에 대학을 졸업하고 군대도 떠날 수 있었습니다. 이 앱 덕분에 가족을 부양할 수 있었습니다.&rdquo;</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>, r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTov는 바로 그 <span class="nb">인생을 바꾼</span> 엔진을 중·고등학생에게 전합니다 &mdash; 학교가 요구하는 학급 관리와 프라이버시를 갖춘 채로.
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>AnkiTov <span class="nb">조직이 하는 일</span></h2>
+      <ul class="bullets">
+        <li><strong>공개 커리큘럼 자료</strong> &mdash; 핵심 <span class="nb">초·중·고교 교과</span>를 위한 다국어 시드 덱과 학습 구조.</li>
+        <li><strong>교육자 커뮤니티</strong> &mdash; 교사, 과외 교사, 학습 코디네이터가 교실 워크플로를 나눕니다.</li>
+        <li><strong>공개 도구와 표준</strong> &mdash; 덱, 스케줄링 알고리즘, 학생 데이터는 옮길 수 있고 오픈 소스로 유지됩니다.</li>
+        <li><strong>연구 번역</strong> &mdash; 교사 업무를 늘리지 않고 인출 연습을 적용하는 <span class="nb">쉬운 언어</span>의 안내서.</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>교실 <span class="nb">또는 학교에서</span> AnkiTov 파일럿 시작</h2>
+      <p>학급 파일럿 준비, 첫 덱 가져오기, 프라이버시 아키텍처 검토에 도움이 필요하신가요?</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/ko/">홈</a>
+      <a href="/ko/about.html">소개 &amp; 미션</a>
+      <a href="/ko/community.html">커뮤니티</a>
+      <a href="/ko/tour.html">둘러보기</a>
+      <a href="/ko/blog.html">노트</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization. 교사와 엔지니어의 작은 커뮤니티가 만듭니다.</p>
+    <p class="footer-note">AnkiTov는 독립적인 <span class="nb">오픈 소스</span> 프로젝트입니다 &mdash; Anki의 개발사 <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a>를 만드는 Ankitects와는 제휴하지 않았으며 승인을 받지도 않았습니다.</p>
+    <p class="footer-note">쿠키 없음 &bull; 트래커 없음 &bull; 텔레메트리 없음 &mdash; 오직 간격 반복.</p>
+  </footer>
+</body>
+</html>

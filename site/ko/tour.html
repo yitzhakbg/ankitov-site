@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov 프로젝트 둘러보기 — 개발자와 기여자를 위한 처음부터 끝까지 안내</title>
+  <meta name="description" content="AnkiTov 프로젝트 안내 투어: 5계층 아키텍처, 교차 숙달 파이프라인(IMP), 설치 없는 브라우저 연습, 자체 호스팅 동기화, 그리고 직접 실행하는 방법.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov 프로젝트 둘러보기">
+  <meta property="og:description" content="개발자와 기여자를 위한 오픈 소스 AnkiTov 프로젝트의 처음부터 끝까지 안내 투어.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/tour.html">
+  <meta property="og:image" content="https://ankitov.org/img/tour/community-infographic.png">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/ko/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/ko/about.html" class="nav-link">소개</a>
+      <a href="/ko/community.html" class="nav-link">커뮤니티</a>
+      <a href="/ko/tour.html" class="nav-link is-active">둘러보기</a>
+      <a href="/ko/blog.html" class="nav-link">노트</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/tour.html">English</option><option value="/fr/tour.html">Français</option><option value="/es/tour.html">Español</option><option value="/de/tour.html">Deutsch</option><option value="/it/tour.html">Italiano</option><option value="/pt/tour.html">Português</option><option value="/ru/tour.html">Русский</option><option value="/zh/tour.html">中文</option><option value="/ja/tour.html">日本語</option><option value="/ko/tour.html" selected>한국어</option><option value="/hi/tour.html">हिन्दी</option><option value="/ar/tour.html">العربية</option><option value="/he/tour.html">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">프로젝트 둘러보기 &bull; 무료 &amp; 오픈 소스</p>
+      <h1><span class="nb">전체 시스템</span>, 처음부터 끝까지.</h1>
+      <p class="hero-sub">개발자와 기여자를 위한 안내 투어: AnkiTov가 무엇인지, 모든 구성 요소가 어떻게
+        돌아가는지, 직접 실행하는 법 &mdash; <span class="nb">5계층</span>
+        아키텍처부터 <span class="nb">브라우저 스트리밍</span> 연습 세션까지.</p>
+      <div class="cta-group">
+        <a href="#map" class="cta">한 장짜리 지도부터 보기 &blacktriangleright;</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov" class="cta-secondary" target="_blank" rel="noopener">소스 둘러보기 &rarr;</a>
+      </div>
+    </section>
+
+    <section class="block" id="map">
+      <h2>한 페이지에 담은 시스템</h2>
+      <p>AnkiTov의 모든 주요 구성 요소와 그 연결 방식: 공개 표면, 제품 등급,
+        <span class="nb">안에서 밖으로</span> 향하는 아키텍처, 학생 여정, 그리고
+        소프트웨어가 실행되는 위치.</p>
+      <img src="/img/tour/community-infographic.png"
+           alt="AnkiTov 커뮤니티 투어 인포그래픽: 아키텍처, 파이프라인, 스트리밍, 동기화, 로드맵"
+           loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #cbd5e1;">
+    </section>
+
+    <section class="block" id="materials">
+      <h2>모든 형식으로 만나는 투어</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>영상 투어 보기</h3>
+          <p>프로젝트 전체를 해설과 함께 둘러봅니다 &mdash; 아키텍처, 파이프라인, 스트리밍,
+            동기화, 그리고 기여하는 방법. 유튜브 채널에 공개되어 있습니다.</p>
+          <p><a href="https://www.youtube.com/@AnkiTovApp" target="_blank" rel="noopener">유튜브에서 보기 &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>슬라이드 넘겨 보기</h3>
+          <p>소개 슬라이드 덱: 문제, 방침, 아키텍처,
+            학생 여정, 로드맵, 그리고 참여할 지점.</p>
+          <p><a href="/img/tour/community-slides.pdf">슬라이드 열기 (PDF) &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>인포그래픽 보관하기</h3>
+          <p><span class="nb">한 장</span>으로 정리된 마스터 맵 &mdash; 새 기여자 온보딩이나
+            팀 벽에 붙이기에 좋습니다.</p>
+          <p><a href="/img/tour/community-infographic.png">전체 크기로 보기 &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>가이드 읽기</h3>
+          <p>글로 된 <span class="nb">처음부터 끝까지</span> 투어: 같은 이야기를 깊이 있게,
+            모든 용어의 용어집과 함께 &mdash; 프로젝트 어휘를 익히는 가장 빠른 길.</p>
+          <p><a href="/tour-guide.md">가이드 읽기 &rarr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deeper">
+      <h2>더 깊이 들어가기</h2>
+      <ul class="bullets">
+        <li><strong>소스 코드:</strong> <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">github.com/yitzhakbg/AnkiTov</a> &mdash; AGPL-3.0, CC0 시드 덱 포함.</li>
+        <li><strong>문서:</strong> mdBook 사이트에서 아키텍처, IMP, 개발 가이드를 다룹니다.</li>
+        <li><strong>실행하기:</strong> <span class="nb"><code>bash scripts/bootstrap.sh</code></span>를 실행한 뒤
+          <span class="nb"><code>cd backend &amp;&amp; cargo run start</code></span>를 실행합니다.</li>
+        <li><strong>둘러보기:</strong> 대시보드
+          (<span class="nb"><code>/dashboard</code></span>)와 실시간 API 문서
+          (<span class="nb"><code>/scalar</code></span>)는 <span class="nb">서버와 함께 제공됩니다</span>.</li>
+        <li><strong>커뮤니티:</strong> <a href="/ko/community.html">덱 템플릿, 커리큘럼 매핑, 파일럿 도움</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/ko/">홈</a>
+      <a href="/ko/about.html">소개 &amp; 미션</a>
+      <a href="/ko/community.html">커뮤니티</a>
+      <a href="/ko/tour.html">둘러보기</a>
+      <a href="/ko/blog.html">노트</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization. 공개되고 <span class="nb">연구에 기반한</span> 학습을 지향합니다.</p>
+    <p class="footer-note">쿠키 없음 &bull; 트래커 없음 &bull; <span class="nb">프라이버시 우선</span> 정적 제공</p>
+  </footer>
+</body>
+</html>

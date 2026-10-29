@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov——让您的学生领先一步。面向课堂的间隔重复。</title>
+  <meta name="description" content="学生周一学会一个概念，周五通过测验，30 天后 80% 已被遗忘。AnkiTov 将 Anki——学生信赖的间隔重复系统——带入 K-12 学校：班级管理、教师控制台、架构级隐私保护。几乎不给教师增加负担，不占用额外课堂时间。">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov——让您的学生领先一步。面向课堂的间隔重复。">
+  <meta property="og:description" content="九月教的知识，到五月依然记得。AnkiTov 将 Anki 带入课堂——几乎不给教师增加负担，不占用额外课堂时间，几分钟即可部署运行。免费且开源。">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/zh/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/zh/about.html" class="nav-link">关于</a>
+      <a href="/zh/community.html" class="nav-link">社区</a>
+      <a href="/zh/tour.html" class="nav-link">导览</a>
+      <a href="/zh/blog.html" class="nav-link">笔记</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/" selected>中文</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/">العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">社区与教育计划 &bull; 对学校免费开放</p>
+      <h1>让您的学生<span class="nb">领先一步</span>——并<span class="nb">始终保持领先</span>。</h1>
+      <p class="hero-kicker">九月教的知识，到五月依然记得。</p>
+      <p class="hero-sub">
+        AnkiTov 将 <strong>Anki</strong>——这款被数百万医学生与多语种学习者
+        信赖的间隔重复引擎——带进 K&ndash;12
+        课堂，配备班级名册、课程牌组、教师控制台，
+        以及<span class="nb">架构级隐私保护。</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">几乎不给教师增加负担</span>
+        <span class="hero-badge">不占用额外课堂时间</span>
+        <span class="hero-badge">几分钟即可投入使用</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta">观看 <span class="nb">60 秒</span>概览 &blacktriangleright;</a>
+        <a href="#how-it-works" class="cta-secondary">三步开启一个班级</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">获取 AnkiTov &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">课堂的现实</p>
+        <h2>问题的全貌，毫不遮掩</h2>
+        <p class="section-lead">
+          学生周一学会一个概念，周五测验通过——而
+          <strong><span class="nb">30 天</span>后，遗忘率可高达 80%。</strong>这不是因为
+          老师没教到，也不是学生不够努力。缺乏定时提取的人类记忆，
+          本来就会这样衰退。
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>教完、考完、忘光</h3>
+          <p>学生周四晚上突击，周五通过，一个月后大脑一片空白——而下一单元恰恰要建立在这些基础之上。</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3><span class="nb">反复重讲</span>的恶性循环</h3>
+          <p>数周宝贵的课堂时间，被耗在<span class="nb">重新讲解</span>九月就已“讲过”的内容上。进度被拖慢，进阶主题被迫砍掉。</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>为什么经过验证的工具迟迟没有走进 <span class="nb">K&ndash;12</span> 课堂</h3>
+          <p>认知科学几十年前就靠间隔重复（SRS）解决了记忆保持问题。但 Anki 这类面向成年个人用户的工具，并不是为 30 名<span class="nb">八年级学生</span>、学校教学大纲，或教师的 <span class="nb">45 分钟</span>备课时间而设计的。</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>商业教育科技让情况更糟</h3>
+          <p><span class="nb">按席位</span>收费的订阅、要求学生<span class="nb">注册邮箱</span>、广告网络，以及被输送到<span class="nb">第三方</span>云端的学习记录——对<span class="nb">学校管理者</span>而言，这是一片法律与伦理的雷区。</p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>学校从未拒绝记忆科学。</strong>
+          他们只是缺少一套尊重教师时间、兼顾班级组织、
+          保护学生隐私的课堂基础设施。<em>AnkiTov 正是为成为那<span class="nb">缺失的一环</span>而生。</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">60 秒</span>概览。</strong>
+          突击背诵为何会淡忘、间隔提取如何把知识牢牢锁住、AnkiTov 如何在真实学校中运行——全程零学生账号、零追踪。
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="动画图表：不复习时记忆快速消退，而每次快速复习都能将其恢复，让学生走进考场时依然记得所学内容。">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">学生还记得多少</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">时间 &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">第 1 天</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">第 1 周</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">第 3 周</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">考试</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">快速复习</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">快速复习</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">快速复习</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">用 AnkiTov：依然记得</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">不复习：几乎忘光</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">课程讲完</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>配合 AnkiTov 快速复习</span>
+          <span class="key"><span class="swatch without"></span>突击一次，之后归零</span>
+          <span class="key"><span class="swatch review"></span><span class="nb">一次快速复习</span>即可重置遗忘曲线</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">轻松上手</p>
+        <h2>AnkiTov 如何破解难题——以分钟计，而非以月计</h2>
+        <p class="section-lead section-lead--full">
+          立足课堂现实而设计：<br>
+          <span class="nb">无需多备一节课，</span>
+          <span class="nb">无需逐个排查学生账号，</span>也
+          <span class="nb">无需改变您的教学方式。</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">第 1 步 &bull; 约 2 分钟</div>
+          <h3>导入牌组，分享 <span class="nb">6 位字母</span>的<span class="nb">班级代码</span></h3>
+          <p>导入任何标准的 <span class="nb">Anki <code>.apkg</code> 牌组</span>——或者<span class="nb">即刻上手</span>，使用我们开放的课程种子牌组。两次点击即可分配给全班。<span class="nb">无需学生邮箱、密码，</span>也<span class="nb">无需 IT 工单。</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">第 2 步 &bull; 每天几分钟</div>
+          <h3>在家中、在班车上，或作为<span class="nb">少于 15 分钟</span>的<span class="nb">课前热身</span></h3>
+          <p>学生在家里或<span class="nb">热身时段</span>复习，您则从容点名——<span class="nb">每天少于 15 分钟</span>。<br>FSRS 调度算法只把即将淡忘的卡片推到眼前——将九月打下的基础与本周的新单元交织在一起。</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">第 3 步 &bull; 课前扫一眼</div>
+          <h3>在<span class="nb">周五测验</span>前发现<span class="nb">全班性</span>漏洞</h3>
+          <p>教师控制台把每个学生的复习记录，汇成一份实时的记忆保持视图。如果半个班都在某个公式或某组词汇上滑坡，您立刻就能看到——花两分钟点拨即可，而不必<span class="nb">花两周重讲。</span></p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">开箱即用</span>的开放种子牌组（CC0 公有领域 &bull; 每套 105 张卡）：</strong>
+          <span>可直接投入班级试点，也可在 Anki 中自行定制：</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">数学定义（英语 &amp; 希伯来语）</span>
+          <span class="seed-pill">科学术语（英语 &amp; 希伯来语）</span>
+          <span class="seed-pill">历史：年代与人物（英语 &amp; 法语）</span>
+          <span class="seed-pill">英语学术词汇</span>
+          <span class="seed-pill">+ 任何标准 Anki <code>.apkg</code> 牌组</span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>没有间隔练习时</h3>
+          <ul>
+            <li>周四突击 &rarr; 周五通过 &rarr; 下月忘光</li>
+            <li>数周时间耗在期中与期末复习讲义上</li>
+            <li>谁掉了队，您要等到<em>阅卷之后</em>才发现</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>让 AnkiTov 伴随您的教学</h3>
+          <ul>
+            <li>每天几分钟，让每个<span class="nb">已学单元</span><span class="nb">全年保持温热</span></li>
+            <li>零额外课堂时间——安静地伴随您的课程运行</li>
+            <li>学生进入进阶单元时，基础早已烂熟于心</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>给每所学校的三个承诺</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>记忆保持，<span class="nb">复利增长</span></h3>
+          <p>由现代 FSRS 调度算法驱动。学生在每个概念即将淡忘之际恰好复习——把<span class="nb">短期突击</span>变成持久的、<span class="nb">贯穿全年的掌握。</span></p>
+        </div>
+        <div class="pillar">
+          <h3>隐私保护，<span class="nb">写进架构</span></h3>
+          <p>零学生个人信息、零追踪器、零遥测、零外呼云端请求——学生数据永不离开您的学校。合规出自设计，而非小字条款。</p>
+        </div>
+        <div class="pillar">
+          <h3>开放格式，<span class="nb">绝无锁定</span></h3>
+          <p>牌组是标准的 <code>.apkg</code> 文件——开放的 Anki 生态格式。您的课程材料与学习记录，永远属于您的学校。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>为校园里的每个角色而建</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>教师与<span class="nb">教研组长</span></h3>
+          <p>按您的教学大纲节奏发布卡片，看清哪些概念需要一次<span class="nb">两分钟</span>的小结，看着学生练出真正的熟练度——<strong>几乎不占用您的备课时间，也不占用任何课堂时间。</strong></p>
+        </div>
+        <div class="block">
+          <h3>校长与<span class="nb">IT 管理员</span></h3>
+          <p>在您已有的基础设施上，几分钟即可部署完成。不收集学生邮箱或个人信息，无需审查<span class="nb">第三方</span>数据处理商，也没有吞噬预算的<span class="nb">按席位</span>SaaS 续费。</p>
+        </div>
+        <div class="block">
+          <h3>学生</h3>
+          <p>用一种从容的、<span class="nb">每天几分钟</span>的习惯，取代<span class="nb">考前一晚</span>的压力突击——而且这个习惯真正留得下来。走进每一场考试，内容早已了然于胸。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>课堂体验实录</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="牌组浏览器，显示 AnkiTov Pilot — Math Definitions 牌组的新卡、学习中与待复习数量" loading="lazy">
+          <figcaption>
+            <strong>1. 课程牌组库</strong>
+            <span class="nb">开箱即用</span>的多语种种子牌组，覆盖核心学科。标准 Anki <code>.apkg</code> 文件——导入容易，全组共享，随时扩展。
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="一张已作答的卡片，显示单词 grievous 及其释义，以及 Again、Good 按钮与下次复习间隔" loading="lazy">
+          <figcaption>
+            <strong>2. <span class="nb">无干扰</span>学生复习</strong>
+            简洁的全屏复习界面，只有两个简单的按钮（<em>Again</em> / <em>Good</em>），底层是严谨的 FSRS 记忆调度。
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="教师 IMP 控制台，显示班级、学生、种子牌组与实时的全班记忆保持热力图" loading="lazy">
+          <figcaption>
+            <strong>3. 教师控制台与实时记忆保持图</strong>
+            把学生复习记录汇总成<span class="nb">全班范围</span>的记忆保持热力图——在周五测验之前，就发现正在淡忘的概念。
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="一张希伯来语从右到左的数学卡片，答案已揭示，带 Again 与 Good 按钮" loading="lazy">
+          <figcaption>
+            <strong>4. <span class="nb">一流</span>的多语言与 RTL 支持</strong>
+            英语、希伯来语、阿拉伯语、法语、西班牙语等 13 种语言——<span class="nb">从右到左</span>的文字与数学符号，开箱即呈现无误。
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT &amp; Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">致 IT 主管与学校领导</p>
+      <h2>跑一个<span class="nb">学校试点</span>需要什么</h2>
+      <div class="grid-3">
+        <div>
+          <h3>用您<span class="nb">已有的</span>任何硬件</h3>
+          <p>在一台校内 Mac、Windows PC 或 Linux 主机上即可运行（局域网内）——或者一台每月 5 美元的私有 VPS。通过<span class="nb">校园 Wi-Fi</span> 即可轻松支撑 200+ 学生同时在线。</p>
+        </div>
+        <div>
+          <h3>单一可执行文件，<span class="nb">零依赖</span></h3>
+          <p>一个<span class="nb">自包含</span>的可执行文件，内嵌 SQLite。无需外部数据库服务器，无需 Docker，也不需要任何对外互联网访问。</p>
+        </div>
+        <div>
+          <h3><span class="nb">零个人信息</span>，经得起审计</h3>
+          <p>学生通过匿名的 <span class="nb">6 位字母</span>班级代码加入。学生姓名、邮箱或设备标识符，从不离开您的教学楼。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>认知科学早有定论。来听听学习者<span class="nb">如何评价 Anki。</span></h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>“我不会把我对 Anki 的热情藏在公正客观的体面外衣之后：它是我人生中重要的一部分。”</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>，<em>《增强<span class="nb">长期记忆</span>》</em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“间隔重复记忆系统，让记忆成为一种选择。”</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>，<em>《工作笔记》</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>“这个应用改变了我的人生。多亏 Anki，我才能大学毕业并离开军队。多亏这个应用，我才能养活我的家人。”</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>，r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTov 把同样<span class="nb">改变人生</span>的引擎带给初中与高中学生——并配上学校所需的班级管理与隐私保障。
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>AnkiTov <span class="nb">组织</span>在做什么</h2>
+      <ul class="bullets">
+        <li><strong>开放课程材料</strong>——面向核心<span class="nb">K&ndash;12 学科</span>的多语种种子牌组与学习结构。</li>
+        <li><strong>教育者社区</strong>——教师、辅导老师与学习协调者在此分享课堂实践经验。</li>
+        <li><strong>开放工具与标准</strong>——牌组、调度算法与学生数据保持可迁移、开源。</li>
+        <li><strong>研究转化</strong>——以<span class="nb">平实语言</span>写成的指南，教您应用提取练习而不增加教师负担。</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>在您的课堂<span class="nb">或学校</span>试点 AnkiTov</h2>
+      <p>需要协助搭建班级试点、导入第一份牌组，或审阅我们的隐私架构？</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/zh/">首页</a>
+      <a href="/zh/about.html">关于与使命</a>
+      <a href="/zh/community.html">社区</a>
+      <a href="/zh/tour.html">导览</a>
+      <a href="/zh/blog.html">笔记</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov 组织。由一小群教育者与工程师社区构建。</p>
+    <p class="footer-note">AnkiTov 是一个独立的<span class="nb">开源</span>项目——与 <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a> 的开发商 Ankitects 无关联，也未获其认可。</p>
+    <p class="footer-note">无 Cookie &bull; 无追踪器 &bull; 无遥测 &mdash; 只有间隔重复。</p>
+  </footer>
+</body>
+</html>

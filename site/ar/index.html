@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov — ساعد طلابك على التقدم. التكرار المتباعد للصف الدراسي.</title>
+  <meta name="description" content="يتعلم الطلاب مفهومًا يوم الاثنين، وينجحون في الاختبار في نهاية الأسبوع، وبعد ٣٠ يومًا يتبخر ٨٠٪ منه. يقدّم AnkiTov نظام Anki — نظام التكرار المتباعد الذي يثق به الطلاب — إلى المدارس: صفوف، ولوحة تحكم للمعلم، وخصوصية بالتصميم. عبء شبه منعدم على هيئة التدريس. دون أي وقت صفّي إضافي.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov — ساعد طلابك على التقدم. التكرار المتباعد للصف الدراسي.">
+  <meta property="og:description" content="ما تدرّسه في سبتمبر يبقى حاضرًا في مايو. يقدّم AnkiTov Anki إلى الصف الدراسي — عبء شبه منعدم على هيئة التدريس، ودون أي وقت صفّي إضافي، وجاهز للعمل خلال دقائق. مجاني ومفتوح المصدر.">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/ar/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/ar/about.html" class="nav-link">عن المشروع</a>
+      <a href="/ar/community.html" class="nav-link">المجتمع</a>
+      <a href="/ar/tour.html" class="nav-link">الجولة</a>
+      <a href="/ar/blog.html" class="nav-link">مقالات</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/">中文</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/" selected>العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">مبادرة مجتمعية وتعليمية &bull; مجانية ومفتوحة للمدارس</p>
+      <h1>ساعد طلابك على <span class="nb">التقدُّم</span> &mdash; وعلى <span class="nb">البقاء في المقدمة</span>.</h1>
+      <p class="hero-kicker">ما تدرّسه في سبتمبر يبقى حاضرًا في مايو.</p>
+      <p class="hero-sub">
+        يقدّم AnkiTov <strong>Anki</strong> — محرك التكرار المتباعد
+        الذي تثق به ملايين طلاب الطب ومتعددو اللغات — إلى صفوف
+        التعليم من الروضة حتى الصف الثاني عشر، بقوائم صفوف وحزم مناهج
+        ولوحة تحكم للمعلم، و<span class="nb">خصوصية بالتصميم.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">عبء شبه منعدم على هيئة التدريس</span>
+        <span class="hero-badge">دون أي وقت صفّي إضافي</span>
+        <span class="hero-badge">جاهز للعمل خلال دقائق</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta">شاهد <span class="nb">العرض في ٦٠ ثانية</span> &blacktriangleleft;</a>
+        <a href="#how-it-works" class="cta-secondary">كيف تدير صفك في ٣ خطوات</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">احصل على AnkiTov &larr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">واقع الصف الدراسي</p>
+        <h2>المشكلة، بكل تفاصيلها القبيحة</h2>
+        <p class="section-lead">
+          يتعلم الطلاب مفهومًا يوم الاثنين، وينجحون في اختبار نهاية الأسبوع &mdash;
+          <strong><span class="nb">وبعد ٣٠ يومًا</span> يتبخر منه ما يصل إلى ٨٠٪.</strong> ليس لأن
+          المعلمين لم يشرحوا، ولا لأن الطلاب لم يجاهدوا. هكذا ببساطة
+          تتلاشى الذاكرة البشرية من دون استرجاع موقَّت.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">٠١</span>
+          <h3>تُعلِّم، تختبر، يتبخَّر</h3>
+          <p>يحفظ الطلاب ليلة الاختبار، وينجحون فيه، ثم ينسون كل شيء بعد شهر &mdash; تمامًا حين تُبنى الوحدة التالية على تلك الأساسيات نفسها.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">٠٢</span>
+          <h3>دوّامة <span class="nb">إعادة الشرح</span></h3>
+          <p>تتبخر أسابيع من وقت الصف الثمين في <span class="nb">إعادة شرح</span> مادة &laquo;غُطّيت&raquo; سلفًا في سبتمبر. يتأخر الجدول؛ وتُحذف المواضيع المتقدمة.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">٠٣</span>
+          <h3>لماذا لم تصل الأدوات المجرَّبة إلى <span class="nb">التعليم المدرسي</span></h3>
+          <p>حلّ علم الإدراك مشكلة الاحتفاظ بالمعرفة منذ عقود عبر التكرار المتباعد (SRS). لكن الأدوات الفردية الموجهة للبالغين مثل Anki الخام لم تُبنَ لـ٣٠ <span class="nb">طالبًا في الصف الثامن</span>، ولا لمنهج مدرسي، ولا لفترة إعداد للمعلم مدتها <span class="nb">٤٥ دقيقة</span>.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">٠٤</span>
+          <h3>تقنيات التعليم التجارية تزيد الطين بلة</h3>
+          <p><span class="nb">اشتراكات لكل مقعد</span>، وتسجيل طلاب <span class="nb">بالبريد الإلكتروني</span>، وشبكات إعلانية، وسجلات تعلم تُضخ إلى غيوم <span class="nb">أطراف ثالثة</span> &mdash; حقل ألغام قانوني وأخلاقي <span class="nb">لمديري المدارس.</span></p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>المدارس لم ترفض علم الذاكرة.</strong>
+          لكنها ببساطة افتقرت إلى بنية تحتية صفّية تحترم وقت المعلم،
+          ولوجستيات المجموعة، وخصوصية الطلاب. <em>وقد بُني AnkiTov ليكون <span class="nb">تلك الطبقة المفقودة.</span></em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">العرض في ٦٠ ثانية.</span></strong>
+          لماذا يتبخر ما تحفظه، وكيف يثبّت الاسترجاع المتباعد المعرفة، وكيف يعمل AnkiTov في مدرسة حقيقية &mdash; دون أي حسابات للطلاب أو تتبع.
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="رسم متحرك: الذاكرة تتلاشى سريعًا من دون مراجعة، لكن كل مراجعة سريعة تعيد ترسيخها، فيدخل الطلاب الاختبار وما زالوا يتذكرون المادة.">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">ما يتذكره الطلاب</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">الزمن &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">اليوم ١</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">الأسبوع ١</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">الأسبوع ٣</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">الاختبار</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">مراجعة سريعة</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">مراجعة سريعة</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">مراجعة سريعة</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">مع AnkiTov: ما زال حاضرًا</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">بدونه: ضاع معظمه</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">تم شرح الدرس</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>مع مراجعات AnkiTov السريعة</span>
+          <span class="key"><span class="swatch without"></span>تحفظ مرة واحدة ثم لا شيء</span>
+          <span class="key"><span class="swatch review"></span><span class="nb">مراجعة سريعة</span> تعيد ترسيخ ما تلاشى</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">تبنٍّ بلا جهد</p>
+        <h2>كيف يعالج AnkiTov المشكلة &mdash; في دقائق، لا في أشهر</h2>
+        <p class="section-lead section-lead--full">
+          صُمم انطلاقًا من واقع الصف الدراسي:<br>
+          <span class="nb">صفر حصص إضافية للتخطيط،</span>
+          <span class="nb">صفر حسابات فردية لإصلاح مشكلاتها،</span>
+          <span class="nb">وصفر تغيير في طريقة تدريسك.</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">الخطوة ١ &bull; دقائق معدودة</div>
+          <h3>أدرج حزمة وشارك <span class="nb">رمز صف</span> <span class="nb">من ستة أحرف</span></h3>
+          <p>استورد أي <span class="nb">حزمة Anki <code>.apkg</code> قياسية</span> &mdash; أو <span class="nb">ابدأ فورًا</span> بحزم بذور المناهج المفتوحة لدينا. أسند الحزمة إلى صفك في <span class="nb">نقرتين.</span> لا بريد إلكتروني للطلاب، ولا كلمات مرور، ولا <span class="nb">تذاكر دعم فني.</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">الخطوة ٢ &bull; دقائق يوميًا</div>
+          <h3>في المنزل، في الحافلة، أو كـ<span class="nb">نشاط تمهيدي قصير</span> مدته <span class="nb">أقل من ١٥ دقيقة</span></h3>
+          <p>يراجع الطلاب في المنزل أو خلال <span class="nb">التمهيد</span> بينما تسجل الحضور &mdash; <span class="nb">أقل من ١٥ دقيقة</span> يوميًا.<br>يُبرز مجدول FSRS البطاقات التي على وشك التلاشي فقط &mdash; فينسج أساسيات سبتمبر مع وحدة هذا الأسبوع.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">الخطوة ٣ &bull; نظرة سريعة قبل الحصة</div>
+          <h3>رصد الفجوات <span class="nb">على مستوى الصف</span> قبل <span class="nb">اختبار نهاية الأسبوع</span></h3>
+          <p>تحوّل لوحة تحكم المعلم سجلات المراجعة الفردية إلى عرض حيّ للاحتفاظ بالمعرفة. إذا كان نصف الصف يتعثر في صيغة أو مجموعة مفردات بعينها، تراها فورًا &mdash; وتعالجها في دقائق، لا <span class="nb">أسبوعين من إعادة الشرح.</span></p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">حزم بذور مفتوحة جاهزة للتشغيل</span> (ملكية عامة CC0 &bull; ١٠٥ بطاقات لكل حزمة):</strong>
+          <span>استخدمها مباشرة في تجربة صفية أو خصّصها في Anki:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">Math Definitions (EN &amp; HE)</span>
+          <span class="seed-pill">Science Terms (EN &amp; HE)</span>
+          <span class="seed-pill">History: Dates &amp; Figures (EN &amp; FR)</span>
+          <span class="seed-pill">English Academic Vocabulary</span>
+          <span class="seed-pill">+ أي حزمة Anki قياسية <code>.apkg</code></span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>بدون ممارسة متباعدة</h3>
+          <ul>
+            <li>تحفظ ليلة الاختبار &larr; تنجح فيه &larr; تنسى بعد شهر</li>
+            <li>أسابيع تضيع في حزم مراجعة منتصف العام والاختبارات النهائية</li>
+            <li>تكتشف من تأخر <em>بعد</em> تصحيح الاختبار</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>مع AnkiTov إلى جانب تدريسك</h3>
+          <ul>
+            <li>دقائق يوميًا تُبقي <span class="nb">كل وحدة سابقة</span> <span class="nb">حاضرة طوال العام</span></li>
+            <li>صفر وقت صفّي إضافي &mdash; يعمل بهدوء إلى جانب دروسك</li>
+            <li>يدخل الطلاب الوحدات المتقدمة وهم متمكنون من الأساسيات</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>ثلاثة ضمانات لكل مدرسة</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>احتفاظ <span class="nb">يتراكم</span></h3>
+          <p>مدعوم بجدولة FSRS الحديثة. يراجع الطلاب كل مفهوم قبيل تلاشيه مباشرة &mdash; فيتحول الحفظ المكثف <span class="nb">قصير المدى</span> إلى إتقان متين <span class="nb">يدوم العام كاملًا.</span></p>
+        </div>
+        <div class="pillar">
+          <h3>خصوصية <span class="nb">بالتصميم</span></h3>
+          <p>صفر بيانات شخصية للطلاب، صفر متتبعات، صفر قياسات عن بُعد، صفر اتصالات سحابية صادرة &mdash; بيانات الطلاب لا تغادر مدرستك أبدًا. امتثال بالتصميم، لا بالبنود الدقيقة.</p>
+        </div>
+        <div class="pillar">
+          <h3>صيغة مفتوحة، <span class="nb">بلا احتكار</span></h3>
+          <p>الحزم ملفات <code>.apkg</code> قياسية &mdash; صيغة منظومة Anki المفتوحة. مواد مناهجك وسجلات التعلم ملك لمدرستك إلى الأبد.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>صُمم لكل دور داخل المدرسة</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>المعلمون و<span class="nb">رؤساء الأقسام</span></h3>
+          <p>أصدر البطاقات بما يوافق وتيرة منهجك، ورصد أي المفاهيم يحتاج إلى <span class="nb">استعادة سريعة</span>، وشاهد طلابك يبنون طلاقة حقيقية &mdash; مع <strong>عبء شبه منعدم على وقت تحضيرك ودون أي وقت صفّي إضافي.</strong></p>
+        </div>
+        <div class="block">
+          <h3>المدراء و<span class="nb">مسؤولو تقنية المعلومات</span></h3>
+          <p>يُنشر خلال دقائق على بنية تحتية تملكها أصلًا. لا بريد إلكتروني للطلاب ولا بيانات شخصية تُجمع، ولا معالجو بيانات من <span class="nb">أطراف ثالثة</span> تحتاج إلى فحص، ولا تجديدات SaaS <span class="nb">لكل مقعد</span> تلتهم ميزانيتك.</p>
+        </div>
+        <div class="block">
+          <h3>الطلاب</h3>
+          <p>استبدلوا الحفظ المرهق <span class="nb">ليلة الاختبار</span> بعادة هادئة <span class="nb">لا تستغرق سوى دقائق يوميًا</span> وترسخ فعلًا. ادخلوا كل اختبار وأنتم متقنون للمادة إتقانًا تامًا.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>داخل التجربة الصفية</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="متصفح الحزم يعرض حزمة AnkiTov Pilot — Math Definitions مع أعداد البطاقات الجديدة وقيد التعلم والمستحقة" loading="lazy">
+          <figcaption>
+            <strong>١. مكتبة حزم المناهج</strong>
+            <span class="nb">جاهزة للاستخدام</span> حزم بذور متعددة اللغات موائمة للمواد الأساسية. ملفات Anki قياسية <code>.apkg</code> &mdash; سهلة الاستيراد والمشاركة على مستوى القسم والتوسعة.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="بطاقة مجاب عليها تعرض كلمة grievous وتعريفها وزرّي Again وGood مع الفترات التالية" loading="lazy">
+          <figcaption>
+            <strong>٢. مراجعة الطلاب <span class="nb">بلا مشتتات</span></strong>
+            مراجعة نظيفة بوضع الكشك بزرّين بسيطين (<em>Again</em> / <em>Good</em>) وجدولة ذاكرة FSRS صارمة في الخلفية.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="لوحة تحكم IMP للمعلم تعرض الصفوف والطلاب وحزم البذور وخريطة حرارية حية للاحتفاظ على مستوى الصف" loading="lazy">
+          <figcaption>
+            <strong>٣. لوحة تحكم المعلم وخريطة الاحتفاظ الحية</strong>
+            يجمع سجلات مراجعة الطلاب في خريطة حرارية للاحتفاظ <span class="nb">على مستوى الصف</span> &mdash; فترصد المفاهيم المتلاشية قبل اختبار نهاية الأسبوع.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="بطاقة رياضيات عبرية من اليمين إلى اليسار مع إجابتها المكشوفة وزرّي Again وGood" loading="lazy">
+          <figcaption>
+            <strong>٤. دعم <span class="nb">من الدرجة الأولى</span> لتعدد اللغات والكتابة من اليمين إلى اليسار</strong>
+            الإنجليزية والعبرية والعربية والفرنسية والإسبانية و١٣ لغة أخرى &mdash; نصوص <span class="nb">من اليمين إلى اليسار</span> وترميز رياضي تُعرض بإتقان دون أي إعداد.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">لمديري تقنية المعلومات وقادة المدارس</p>
+      <h2>ما يلزم لتشغيل <span class="nb">تجربة مدرسية</span></h2>
+      <div class="grid-3">
+        <div>
+          <h3>أي أجهزة <span class="nb">تملكها أصلًا</span></h3>
+          <p>يعمل على جهاز Mac مدرسي واحد أو حاسوب Windows أو جهاز Linux على شبكتك المحلية &mdash; أو خادم خاص بسعر ٥ دولارات شهريًا. يخدم بسهولة أكثر من ٢٠٠ طالب في الوقت نفسه عبر <span class="nb">واي فاي المدرسية.</span></p>
+        </div>
+        <div>
+          <h3>ملف تنفيذي واحد، <span class="nb">بلا اعتماديات</span></h3>
+          <p>ملف تنفيذي واحد <span class="nb">مكتفٍ ذاتيًا</span> بقاعدة SQLite مدمجة. لا خادم قواعد بيانات خارجي، ولا حاجة إلى Docker، ولا اتصال إنترنت صادر.</p>
+        </div>
+        <div>
+          <h3>وضعية تدقيق <span class="nb">بلا بيانات شخصية</span></h3>
+          <p>ينضم الطلاب عبر رمز صف مجهول <span class="nb">من ستة أحرف</span>. لا أسماء طلاب ولا بريد إلكتروني ولا معرّفات أجهزة تغادر مبناك أبدًا.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>علم الإدراك حسم أمره. وهذا ما يقوله المتعلمون <span class="nb">عن Anki.</span></h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>&laquo;لن أحاول إخفاء حماسي تجاه Anki خلف قناع محترم من الحياد: فهو جزء كبير من حياتي.&raquo;</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>، <em>&laquo;توسيع <span class="nb">الذاكرة طويلة الأمد</span>&raquo;</em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>&laquo;أنظمة الذاكرة القائمة على التكرار المتباعد تجعل الذاكرة خيارًا.&raquo;</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>، <em>&laquo;ملاحظات عمل&raquo;</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>&laquo;غيّر هذا التطبيق حياتي. بفضل Anki استطعت التخرج من الجامعة ومغادرة الجيش. واستطعت إعالة عائلتي بفضل هذا التطبيق.&raquo;</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>، r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        يقدّم AnkiTov المحرك نفسه <span class="nb">الذي يغيّر الحياة</span> لطلاب المرحلة الإعدادية والثانوية &mdash; مغلّفًا بإدارة الصفوف والخصوصية التي تتطلبها المدرسة.
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>ماذا تفعل <span class="nb">مؤسسة AnkiTov</span></h2>
+      <ul class="bullets">
+        <li><strong>مواد منهجية مفتوحة</strong> &mdash; حزم بذور متعددة اللغات وهياكل دراسية للمواد الأساسية في <span class="nb">التعليم من الروضة حتى الصف الثاني عشر.</span></li>
+        <li><strong>مجتمع المعلمين</strong> &mdash; معلمون ومدرسون خصوصيون ومنسقو تعلم يتشاركون أساليب العمل الصفية.</li>
+        <li><strong>أدوات ومعايير مفتوحة</strong> &mdash; الحزم وخوارزميات الجدولة وبيانات الطلاب تبقى قابلة للنقل ومفتوحة المصدر.</li>
+        <li><strong>ترجمة البحوث إلى ممارسة</strong> &mdash; أدلة <span class="nb">بلغة واضحة</span> لتطبيق ممارسة الاسترجاع دون إضافة أعباء على المعلم.</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>جرّب AnkiTov في صفك <span class="nb">أو مدرستك</span></h2>
+      <p>تريد مساعدة في إعداد تجربة صفية، أو استيراد أول حزمة لك، أو مراجعة معمارية الخصوصية لدينا؟</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/ar/">الرئيسية</a>
+      <a href="/ar/about.html">عن المشروع ورسالته</a>
+      <a href="/ar/community.html">المجتمع</a>
+      <a href="/ar/tour.html">الجولة</a>
+      <a href="/ar/blog.html">مقالات</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; مؤسسة AnkiTov. بناها مجتمع صغير من المعلمين والمهندسين.</p>
+    <p class="footer-note">AnkiTov مشروع مستقل <span class="nb">مفتوح المصدر</span> &mdash; لا صلة له بـAnkitects، مطوّر <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a>، ولا يحظى باعتماده.</p>
+    <p class="footer-note">لا ملفات تعريف ارتباط &bull; لا متتبعات &bull; لا قياسات عن بُعد &mdash; تكرار متباعد فقط.</p>
+  </footer>
+</body>
+</html>

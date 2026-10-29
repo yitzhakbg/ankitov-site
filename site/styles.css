@@ -629,3 +629,12 @@ h2 { margin: 0 0 0.6rem; font-size: 1.25rem; }
   .decay-line-with, .decay-line-without { stroke-dashoffset: 0; animation: none; }
   .decay-dot, .decay-label { opacity: 1; animation: none; }
 }
+
+/* --- locale switcher (injected) --- */
+.lang-switch { margin-left: auto; }
+.lang-switch select {
+  font: inherit; font-size: 0.85rem; color: inherit;
+  background: transparent; border: 1px solid currentColor;
+  border-radius: 8px; padding: 0.25rem 0.5rem; cursor: pointer;
+}
+.lang-switch select option { color: #0f172a; background: #fff; }

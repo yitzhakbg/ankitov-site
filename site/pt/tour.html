@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour do Projeto AnkiTov — de ponta a ponta, para desenvolvedores e colaboradores</title>
+  <meta name="description" content="Um tour guiado pelo projeto AnkiTov: a arquitetura de cinco camadas, o Interleaved Mastery Pipeline, a prática no navegador sem instalação, a sincronização auto-hospedada e como rodar você mesmo.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="Tour do Projeto AnkiTov">
+  <meta property="og:description" content="Um tour guiado de ponta a ponta pelo projeto de código aberto AnkiTov, para desenvolvedores e colaboradores.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/tour.html">
+  <meta property="og:image" content="https://ankitov.org/img/tour/community-infographic.png">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/pt/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/pt/about.html" class="nav-link">Sobre</a>
+      <a href="/pt/community.html" class="nav-link">Comunidade</a>
+      <a href="/pt/tour.html" class="nav-link is-active">Tour</a>
+      <a href="/pt/blog.html" class="nav-link">Notas</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/tour.html">English</option><option value="/fr/tour.html">Français</option><option value="/es/tour.html">Español</option><option value="/de/tour.html">Deutsch</option><option value="/it/tour.html">Italiano</option><option value="/pt/tour.html" selected>Português</option><option value="/ru/tour.html">Русский</option><option value="/zh/tour.html">中文</option><option value="/ja/tour.html">日本語</option><option value="/ko/tour.html">한국어</option><option value="/hi/tour.html">हिन्दी</option><option value="/ar/tour.html">العربية</option><option value="/he/tour.html">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">Tour do Projeto &bull; Gratuito &amp; Código Aberto</p>
+      <h1>O <span class="nb">sistema completo</span>, de ponta a ponta.</h1>
+      <p class="hero-sub">Um tour guiado para desenvolvedores e colaboradores: o que é o AnkiTov, como cada
+        peça funciona e como rodar você mesmo — da arquitetura de <span class="nb">cinco camadas</span>
+        à sessão de prática <span class="nb">transmitida pelo navegador</span>.</p>
+      <div class="cta-group">
+        <a href="#map" class="cta">Comece pelo mapa em uma única imagem &blacktriangleright;</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov" class="cta-secondary" target="_blank" rel="noopener">Navegue pelo código-fonte &rarr;</a>
+      </div>
+    </section>
+
+    <section class="block" id="map">
+      <h2>O sistema em uma página</h2>
+      <p>Cada peça principal do AnkiTov e como elas se conectam: as superfícies públicas, os níveis
+        de produto, a arquitetura <span class="nb">de dentro para fora</span>, a jornada do aluno e
+        onde o software roda.</p>
+      <img src="/img/tour/community-infographic.png"
+           alt="Infográfico do tour da comunidade AnkiTov: arquitetura, pipeline, streaming, sincronização, roadmap"
+           loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #cbd5e1;">
+    </section>
+
+    <section class="block" id="materials">
+      <h2>O tour, em todos os formatos</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Assista ao tour em vídeo</h3>
+          <p>Uma caminhada narrada por todo o projeto — arquitetura, pipeline, streaming,
+            sincronização e como contribuir. Publicada no nosso canal do YouTube.</p>
+          <p><a href="https://www.youtube.com/@AnkiTovApp" target="_blank" rel="noopener">Assista no YouTube &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>Folheie a apresentação</h3>
+          <p>A apresentação de slides introdutória: o problema, a doutrina, a arquitetura, a
+            jornada do aluno, o roadmap e onde você pode se envolver.</p>
+          <p><a href="/img/tour/community-slides.pdf">Abra os slides (PDF) &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>Leve o infográfico</h3>
+          <p>O mapa mestre em <span class="nb">uma única imagem</span> — útil para integrar novos
+            colaboradores ou para fixar na parede da equipe.</p>
+          <p><a href="/img/tour/community-infographic.png">Veja em tamanho completo &rarr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>Leia o guia</h3>
+          <p>O tour escrito <span class="nb">de ponta a ponta</span>: a mesma história em profundidade, com
+            o glossário de cada termo — o jeito mais rápido de aprender o vocabulário do projeto.</p>
+          <p><a href="/tour-guide.md">Leia o guia &rarr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deeper">
+      <h2>Aprofunde-se</h2>
+      <ul class="bullets">
+        <li><strong>Código-fonte:</strong> <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">github.com/yitzhakbg/AnkiTov</a> — AGPL-3.0, com baralhos iniciais CC0.</li>
+        <li><strong>Documentação:</strong> o site em mdBook cobre a arquitetura, o IMP e o guia de desenvolvimento.</li>
+        <li><strong>Rode:</strong> <span class="nb"><code>bash scripts/bootstrap.sh</code></span>, depois
+          <span class="nb"><code>cd backend &amp;&amp; cargo run start</code></span>.</li>
+        <li><strong>Explore:</strong> o dashboard
+          (<span class="nb"><code>/dashboard</code></span>) e a documentação da API ao vivo
+          (<span class="nb"><code>/scalar</code></span>) <span class="nb">já vêm com o servidor</span>.</li>
+        <li><strong>Comunidade:</strong> <a href="/pt/community.html">modelos de baralhos, mapeamentos curriculares e ajuda com pilotos</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pt/">Início</a>
+      <a href="/pt/about.html">Sobre &amp; Missão</a>
+      <a href="/pt/community.html">Comunidade</a>
+      <a href="/pt/tour.html">Tour</a>
+      <a href="/pt/blog.html">Notas</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; Organização AnkiTov. Dedicada ao aprendizado aberto e <span class="nb">ancorado em pesquisa</span>.</p>
+    <p class="footer-note">Sem cookies &bull; Sem rastreadores &bull; Entrega estática com <span class="nb">privacidade em primeiro lugar</span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov — अपने छात्रों को आगे बढ़ाइए। कक्षा के लिए स्पेस्ड रिपीटिशन।</title>
+  <meta name="description" content="छात्र सोमवार को कोई अवधारणा सीखते हैं, शुक्रवार को टेस्ट पास करते हैं, और 30 दिन बाद 80% भूल जाते हैं। AnkiTov Anki — छात्रों के भरोसेमंद स्पेस्ड रिपीटिशन सिस्टम — को K-12 स्कूलों तक लाता है: क्लास, टीचर कंसोल और आर्किटेक्चर में बनी प्राइवेसी। शिक्षक स्टाफ पर लगभग कोई बोझ नहीं। कोई अतिरिक्त क्लास टाइम नहीं।">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov — अपने छात्रों को आगे बढ़ाइए। कक्षा के लिए स्पेस्ड रिपीटिशन।">
+  <meta property="og:description" content="सितंबर में जो सिखाया, वही मई तक याद रहता है। AnkiTov Anki को कक्षा तक लाता है — शिक्षक स्टाफ पर लगभग कोई बोझ नहीं, कोई अतिरिक्त क्लास टाइम नहीं, सेटअप मिनटों में। मुफ़्त और ओपन सोर्स।">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/hi/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/hi/about.html" class="nav-link">परिचय</a>
+      <a href="/hi/community.html" class="nav-link">समुदाय</a>
+      <a href="/hi/tour.html" class="nav-link">टूर</a>
+      <a href="/hi/blog.html" class="nav-link">नोट्स</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/">中文</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/hi/" selected>हिन्दी</option><option value="/ar/">العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">समुदाय और शिक्षा पहल &bull; स्कूलों के लिए मुफ़्त और खुला</p>
+      <h1>अपने छात्रों को <span class="nb">आगे बढ़ाइए</span> — और <span class="nb">आगे बनाए रखिए</span>।</h1>
+      <p class="hero-kicker">सितंबर में जो सिखाया, वही मई तक याद रहता है।</p>
+      <p class="hero-sub">
+        AnkiTov <strong>Anki</strong> को — वह स्पेस्ड रिपीटिशन इंजन जिस पर
+        लाखों मेडिकल छात्र और बहुभाषी लोग भरोसा करते हैं — K–12
+        कक्षाओं तक लाता है, साथ में क्लास रोस्टर, पाठ्यक्रम डेक, टीचर कंसोल
+        और <span class="nb">आर्किटेक्चर में बनी प्राइवेसी।</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">शिक्षक स्टाफ पर लगभग कोई बोझ नहीं</span>
+        <span class="hero-badge">कोई अतिरिक्त क्लास टाइम नहीं</span>
+        <span class="hero-badge">मिनटों में चालू</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta"><span class="nb">60-सेकंड</span> का ओवरव्यू देखें &blacktriangleright;</a>
+        <a href="#how-it-works" class="cta-secondary">क्लास 3 चरणों में कैसे चलती है</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">AnkiTov पाइए &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">कक्षा की हक़ीक़त</p>
+        <h2>समस्या का पूरा, बदरंग चेहरा</h2>
+        <p class="section-lead">
+          छात्र सोमवार को कोई अवधारणा सीखते हैं, शुक्रवार को टेस्ट पास करते हैं — और
+          <strong><span class="nb">30 दिन</span> बाद उसका 80% तक ग़ायब हो चुका होता है।</strong> इसका कारण यह नहीं
+          कि शिक्षकों ने नहीं पढ़ाया या छात्रों ने कोशिश नहीं की। सच यह है कि
+          समय पर दोहराव के बिना इंसानी स्मृति ऐसे ही क्षीण होती है।
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>पढ़ाओ, परखो, भुला दो</h3>
+          <p>छात्र गुरुवार की रात रटते हैं, शुक्रवार को पास होते हैं, और महीने भर बाद सब भूल जाते हैं — ठीक उसी वक़्त जब अगला यूनिट इन्हीं नींवों पर खड़ा होता है।</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3><span class="nb">दोबारा पढ़ाने</span> की थकाऊ दौड़</h3>
+          <p>क़ीमती क्लास टाइम के हफ़्ते <span class="nb">फिर से समझाने</span> में डूब जाते हैं — उस सामग्री पर, जो सितंबर में ही “पूरी” हो चुकी थी। रफ़्तार चूक जाती है; उन्नत विषय कट जाते हैं।</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>प्रमाणित उपकरण <span class="nb">K–12</span> तक क्यों नहीं पहुँचे</h3>
+          <p>कॉग्निटिव साइंस ने दशकों पहले ही स्पेस्ड रिपीटिशन (SRS) से याददाश्त की समस्या हल कर ली थी। लेकिन ख़ाली Anki जैसे अकेले वयस्क-टूल 30 <span class="nb">आठवीं के छात्रों</span>, किसी स्कूली पाठ्यक्रम या शिक्षक की <span class="nb">45 मिनट</span> की तैयारी-अवधि के लिए नहीं बने थे।</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>व्यावसायिक EdTech इसे और बिगाड़ती है</h3>
+          <p><span class="nb">प्रति-सीट</span> सब्सक्रिप्शन, छात्रों के ईमेल <span class="nb">साइन-अप</span>, विज्ञापन नेटवर्क और <span class="nb">तीसरे पक्ष</span> के क्लाउड में भेजी जाने वाली लर्निंग हिस्ट्री — <span class="nb">स्कूल प्रशासकों</span> के लिए क़ानूनी और नैतिक ख़तरों का अंबार।</p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>स्कूलों ने स्मृति-विज्ञान को ठुकराया नहीं है।</strong>
+          उनके पास बस ऐसा कक्षा-इंफ़्रास्ट्रक्चर नहीं था जो शिक्षकों का समय,
+          कोहोर्ट की व्यवस्था और छात्रों की प्राइवेसी का सम्मान करे। <em>AnkiTov ठीक वही <span class="nb">ग़ायब कड़ी</span> बनने आया है।</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">60-सेकंड</span> का ओवरव्यू।</strong>
+          क्यों रटाई उड़ जाती है, स्पेस्ड रिट्रीवल ज्ञान को कैसे जमा कर देता है, और AnkiTov एक असली स्कूल में कैसे चलता है — बिना किसी छात्र अकाउंट या ट्रैकिंग के।
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="एनिमेटेड चार्ट: रिव्यू के बिना स्मृति तेज़ी से फीकी पड़ती है, पर हर छोटा रिव्यू उसे फिर लौटा देता है, इसलिए छात्र परीक्षा में सामग्री याद रखकर ही पहुँचते हैं।">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">छात्रों को क्या याद रहता है</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">समय &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">दिन 1</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">हफ़्ता 1</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">हफ़्ता 3</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">परीक्षा</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">छोटा रिव्यू</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">छोटा रिव्यू</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">छोटा रिव्यू</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">AnkiTov के साथ: अभी भी याद</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">बिना: ज़्यादातर भूल गए</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">पाठ पढ़ाया गया</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>AnkiTov के छोटे रिव्यूज़ के साथ</span>
+          <span class="key"><span class="swatch without"></span>एक बार रटो, फिर कुछ नहीं</span>
+          <span class="key"><span class="swatch review"></span>एक <span class="nb">छोटा रिव्यू</span> फीकापन को फिर से भर देता है</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">आसानी से अपनाना</p>
+        <h2>AnkiTov इसे कैसे ठीक करता है — मिनटों में, महीनों में नहीं</h2>
+        <p class="section-lead section-lead--full">
+          कक्षा की असलियत के साथ मिलकर डिज़ाइन किया गया:<br>
+          <span class="nb">तैयार करने को कोई अतिरिक्त पाठ नहीं,</span>
+          <span class="nb">ठीक करने को कोई अलग-अलग अकाउंट नहीं,</span> और
+          <span class="nb">आपकी पढ़ाने के तरीक़े में कोई बदलाव नहीं।</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">चरण 1 &bull; ~2 मिनट</div>
+          <h3>एक डेक डालिए और <span class="nb">6-अक्षर</span> वाला <span class="nb">क्लास कोड</span> शेयर कीजिए</h3>
+          <p>कोई भी मानक <span class="nb">Anki <code>.apkg</code> डेक</span> इंपोर्ट कीजिए — या हमारे ओपन पाठ्यक्रम सीड डेक से <span class="nb">तुरंत शुरुआत कीजिए</span>। अपनी क्लास को <span class="nb">दो क्लिक</span> में असाइन कीजिए। छात्रों के ईमेल, पासवर्ड या <span class="nb">IT टिकट की ज़रूरत नहीं।</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">चरण 2 &bull; रोज़ कुछ मिनट</div>
+          <h3>घर पर, बस में, या <span class="nb">15 मिनट से कम</span> की <span class="nb">शुरुआती गतिविधि</span> की तरह</h3>
+          <p>छात्र घर पर या <span class="nb">वॉर्म-अप</span> के दौरान रिव्यू करते हैं, जब आप हाज़िरी लगाते हैं — रोज़ <span class="nb">15 मिनट से कम</span>।<br>FSRS शेड्यूलर सिर्फ़ वही कार्ड सामने लाता है जो फीका पड़ने की कगार पर होते हैं — सितंबर की नींव को इस हफ़्ते के यूनिट के साथ बुनते हुए।</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">चरण 3 &bull; क्लास से पहले एक नज़र</div>
+          <h3><span class="nb">शुक्रवार के टेस्ट</span> से पहले <span class="nb">पूरी क्लास</span> की कमियाँ पकड़ें</h3>
+          <p>आपका टीचर कंसोल अलग-अलग रिव्यू लॉग को लाइव रिटेंशन व्यू में बदल देता है। अगर आधी क्लास किसी ख़ास फ़ॉर्मूला या शब्दावली-सेट पर लड़खड़ा रही है, तो यह आपको तुरंत दिख जाता है — और आप कुछ ही मिनट में उसे सँभाल लेते हैं, <span class="nb">दो हफ़्ते दोबारा पढ़ाने</span> की बजाय।</p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">तुरंत इस्तेमाल के लिए तैयार</span> ओपन सीड डेक (CC0 Public Domain &bull; हर डेक में 105 कार्ड):</strong>
+          <span>सीधे क्लास पायलट में उतार दीजिए या Anki में अपनी मर्ज़ी से बदल लीजिए:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">गणित: परिभाषाएँ (EN &amp; HE)</span>
+          <span class="seed-pill">विज्ञान शब्दावली (EN &amp; HE)</span>
+          <span class="seed-pill">इतिहास: तारीख़ें और हस्तियाँ (EN &amp; FR)</span>
+          <span class="seed-pill">English Academic Vocabulary</span>
+          <span class="seed-pill">+ कोई भी मानक Anki <code>.apkg</code> डेक</span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>स्पेस्ड अभ्यास के बिना</h3>
+          <ul>
+            <li>गुरुवार को रटो &rarr; शुक्रवार को पास हो जाओ &rarr; अगले महीने तक भूल जाओ</li>
+            <li>मिडटर्म और फ़ाइनल रिव्यू-पैकेट में बर्बाद हो जाने वाले हफ़्ते</li>
+            <li>परीक्षा चेक होने के <em>बाद</em> पता चलता है कि कौन पीछे छूट गया</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>जब AnkiTov आपकी पढ़ाई के साथ चलता है</h3>
+          <ul>
+            <li>रोज़ कुछ मिनट हर <span class="nb">पुराने यूनिट</span> को <span class="nb">साल भर तरोताज़ा</span> रखते हैं</li>
+            <li>कोई अतिरिक्त क्लास टाइम नहीं &mdash; आपके पाठों के साथ-साथ चुपचाप चलता है</li>
+            <li>बुनियादी बातें पक्की करके ही छात्र उन्नत यूनिटों में क़दम रखते हैं</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>हर स्कूल के लिए तीन गारंटियाँ</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>याद जो <span class="nb">जमा होती जाए</span></h3>
+          <p>आधुनिक FSRS शेड्यूलिंग पर आधारित। छात्र हर अवधारणा का रिव्यू ठीक उसके फीका पड़ने से पहले करते हैं &mdash; जिससे <span class="nb">अल्पकालिक</span> रटना टिकाऊ, <span class="nb">साल-भर की महारत</span> बन जाता है।</p>
+        </div>
+        <div class="pillar">
+          <h3><span class="nb">आर्किटेक्चर</span> में बनी प्राइवेसी</h3>
+          <p>छात्रों का कोई PII नहीं, कोई ट्रैकर नहीं, कोई टेलीमेट्री नहीं, कोई आउटबाउंड क्लाउड कॉल नहीं &mdash; छात्रों का डेटा कभी आपके स्कूल नहीं छोड़ता। अनुपालन डिज़ाइन से आता है, बारीक़ छपी शर्तों से नहीं।</p>
+        </div>
+        <div class="pillar">
+          <h3>ओपन फ़ॉर्मैट, <span class="nb">कोई बंधन नहीं</span></h3>
+          <p>डेक मानक <code>.apkg</code> फ़ाइलें हैं &mdash; Anki इकोसिस्टम का खुला फ़ॉर्मैट। आपकी पाठ्यक्रम सामग्री और लर्निंग रिकॉर्ड हमेशा आपके स्कूल की रहेंगी।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>स्कूल की हर भूमिका के लिए बनाया गया</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>शिक्षक और <span class="nb">विभागाध्यक्ष</span></h3>
+          <p>अपने पाठ्यक्रम की रफ़्तार के हिसाब से कार्ड जारी कीजिए, देखिए किन अवधारणाओं को <span class="nb">छोटे पुनरावर्तन</span> की ज़रूरत है, और देखते जाइए कि छात्र असली धारावाहिता बनाते हैं &mdash; <strong>आपकी तैयारी के समय पर लगभग कोई बोझ नहीं और कोई अतिरिक्त क्लास टाइम नहीं।</strong></p>
+        </div>
+        <div class="block">
+          <h3>प्रधानाचार्य और <span class="nb">IT प्रशासक</span></h3>
+          <p>आपके पास मौजूद इंफ़्रास्ट्रक्चर पर मिनटों में तैनात। कोई छात्र ईमेल या PII इकट्ठा नहीं, जाँचने को कोई <span class="nb">तीसरे पक्ष</span> का डेटा-प्रोसेसर नहीं, और बजट चट करने वाला कोई <span class="nb">प्रति-सीट</span> SaaS रिन्यूअल नहीं।</p>
+        </div>
+        <div class="block">
+          <h3>छात्र</h3>
+          <p>तनाव भरी <span class="nb">परीक्षा-पूर्व रात</span> की रटाई की जगह शांत, <span class="nb">रोज़ कुछ मिनट</span> की आदत अपनाइए जो सचमुच टिकती है। हर टेस्ट में सामग्री पूरी याद रखते हुए ही घुसिए।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>कक्षा के अनुभव की झलक</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="AnkiTov Pilot — Math Definitions डेक की सूची दिखाता डेक ब्राउज़र, new, learn और due गिनतियों के साथ" loading="lazy">
+          <figcaption>
+            <strong>1. पाठ्यक्रम डेक लाइब्रेरी</strong>
+            मुख्य विषयों के अनुरूप <span class="nb">तैयार-इस्तेमाल</span> बहुभाषी सीड डेक। मानक Anki <code>.apkg</code> फ़ाइलें &mdash; इंपोर्ट करना, विभाग में शेयर करना और आगे बढ़ाना आसान।
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="उत्तर दिखा हुआ एक कार्ड — शब्द grievous, उसकी परिभाषा, और अगले अंतरालों के साथ Again और Good बटन" loading="lazy">
+          <figcaption>
+            <strong>2. <span class="nb">बिना ध्यान-भंग</span> छात्र रिव्यू</strong>
+            दो सरल बटनों (<em>Again</em> / <em>Good</em>) वाला साफ़ कियोस्क रिव्यू, और नीचे कड़ी FSRS स्मृति-शेड्यूलिंग।
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="टीचर IMP कंसोल — क्लास, छात्र, सीड डेक और लाइव पूरी-क्लास रिटेंशन हीट मैप" loading="lazy">
+          <figcaption>
+            <strong>3. टीचर कंसोल और लाइव रिटेंशन मैप</strong>
+            छात्रों के रिव्यू लॉग को <span class="nb">पूरी क्लास</span> के रिटेंशन हीट मैप में जोड़ता है &mdash; ताकि शुक्रवार के टेस्ट से पहले फीका पड़ती अवधारणाएँ पकड़ में आ जाएँ।
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="एक हिब्रू दाएँ-से-बाएँ गणित कार्ड, उत्तर खुला हुआ, Again और Good बटनों के साथ" loading="lazy">
+          <figcaption>
+            <strong>4. <span class="nb">प्रथम-श्रेणी</span> बहुभाषी और RTL</strong>
+            अंग्रेज़ी, हिब्रू, अरबी, फ़्रेंच, स्पेनिश और 13 लोकेल &mdash; <span class="nb">दाएँ-से-बाएँ</span> लिपियाँ और गणितीय संकेतन शुरुआत से ही साफ़ रेंडर होते हैं।
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">IT निदेशकों और स्कूल नेतृत्व के लिए</p>
+      <h2><span class="nb">स्कूल पायलट</span> चलाने में क्या लगता है</h2>
+      <div class="grid-3">
+        <div>
+          <h3>कोई भी हार्डवेयर जो आप <span class="nb">पहले से रखते हैं</span></h3>
+          <p>आपके लोकल LAN पर एक स्कूल Mac, Windows PC या Linux मशीन पर चलता है &mdash; या $5/महीने के प्राइवेट VPS पर। <span class="nb">स्कूल Wi-Fi</span> पर 200+ एक साथ जुड़े छात्र आसानी से सँभाल लेता है।</p>
+        </div>
+        <div>
+          <h3>एक ही बाइनरी, <span class="nb">कोई डिपेंडेंसी नहीं</span></h3>
+          <p>एम्बेडेड SQLite वाली एक <span class="nb">स्वयं-पर्याप्त</span> एक्ज़ीक्यूटेबल। कोई बाहरी डेटाबेस सर्वर नहीं, Docker की ज़रूरत नहीं, आउटबाउंड इंटरनेट एक्सेस की ज़रूरत नहीं।</p>
+        </div>
+        <div>
+          <h3>ऑडिट के लिहाज़ से <span class="nb">Zero-PII</span></h3>
+          <p>छात्र एक गुमनाम <span class="nb">6-अक्षर</span> वाले क्लास कोड से जुड़ते हैं। कोई छात्र-नाम, ईमेल या डिवाइस पहचानकर्ता कभी आपकी इमारत नहीं छोड़ता।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>कॉग्निटिव साइंस पर सहमति बन चुकी है। अब सुनिए, सीखने वाले <span class="nb">Anki के बारे में</span> क्या कहते हैं।</h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>&ldquo;मैं Anki के लिए अपना उत्साह तटस्थता के भलेमानस के मुखौटे के पीछे छिपाने की कोशिश नहीं करूँगा: यह मेरी ज़िंदगी का एक बड़ा हिस्सा है।&rdquo;</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>, <em>Augmenting <span class="nb">Long-term Memory</span></em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>&ldquo;स्पेस्ड रिपीटिशन मेमोरी सिस्टम याद को एक चुनाव बना देते हैं।&rdquo;</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>, <em>Working notes</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>&ldquo;इस ऐप ने मेरी ज़िंदगी बदल दी। Anki की बदौलत मैं कॉलेज पूरा करके सेना छोड़ सका। इसी ऐप की बदौलत मैं अपने परिवार का भरण-पोषण कर सका।&rdquo;</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>, r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTov वही <span class="nb">ज़िंदगी बदल देने वाला</span> इंजन मिडिल और हाई स्कूल के छात्रों तक लाता है &mdash; साथ में वह क्लास मैनेजमेंट और प्राइवेसी जिसकी एक स्कूल को ज़रूरत होती है।
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>AnkiTov <span class="nb">संगठन क्या करता है</span></h2>
+      <ul class="bullets">
+        <li><strong>ओपन पाठ्यक्रम सामग्री</strong> &mdash; मुख्य <span class="nb">K&ndash;12 विषयों</span> के लिए बहुभाषी सीड डेक और अध्ययन-ढाँचे।</li>
+        <li><strong>शिक्षक समुदाय</strong> &mdash; कक्षा-वर्कफ़्लो साझा करते शिक्षक, ट्यूटर और लर्निंग कोऑर्डिनेटर।</li>
+        <li><strong>ओपन टूल और मानक</strong> &mdash; डेक, शेड्यूलिंग एल्गोरिद्म और छात्रों का डेटा पोर्टेबल और ओपन सोर्स रहता है।</li>
+        <li><strong>रिसर्च का अनुवाद</strong> &mdash; शिक्षकों का बोझ बढ़ाए बिना रिट्रीवल प्रैक्टिस लागू करने की <span class="nb">सहज-भाषा</span> वाली गाइड।</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>अपनी कक्षा <span class="nb">या स्कूल</span> में AnkiTov का पायलट चलाइए</h2>
+      <p>क्लास पायलट सेट अप कराने, अपना पहला डेक इंपोर्ट कराने या हमारी प्राइवेसी आर्किटेक्चर की समीक्षा कराने में मदद चाहिए?</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/hi/">होम</a>
+      <a href="/hi/about.html">परिचय और मिशन</a>
+      <a href="/hi/community.html">समुदाय</a>
+      <a href="/hi/tour.html">टूर</a>
+      <a href="/hi/blog.html">नोट्स</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization. शिक्षकों और इंजीनियरों के एक छोटे समुदाय द्वारा बनाया गया।</p>
+    <p class="footer-note">AnkiTov एक स्वतंत्र <span class="nb">ओपन-सोर्स</span> प्रोजेक्ट है &mdash; <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a> के निर्माता Ankitects से यह संबद्ध नहीं है और न ही उनका समर्थित।</p>
+    <p class="footer-note">कोई कुकीज़ नहीं &bull; कोई ट्रैकर नहीं &bull; कोई टेलीमेट्री नहीं &mdash; बस स्पेस्ड रिपीटिशन।</p>
+  </footer>
+</body>
+</html>

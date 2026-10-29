@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov – Helfen Sie Ihren Schülern zu mehr Erfolg. Verteilte Wiederholung für den Unterricht.</title>
+  <meta name="description" content="Schüler lernen ein Konzept am Montag, bestehen den Test am Freitag – und 30 Tage später sind 80 % davon weg. AnkiTov bringt Anki – das bewährte System für verteilte Wiederholung – an K-12-Schulen: Klassen, eine Lehrkraft-Konsole und Datenschutz durch Architektur. Fast keine Zusatzlast für das Lehrpersonal. Keine zusätzliche Unterrichtszeit.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov – Helfen Sie Ihren Schülern zu mehr Erfolg. Verteilte Wiederholung für den Unterricht.">
+  <meta property="og:description" content="Was Sie im September unterrichten, ist im Mai noch da. AnkiTov bringt Anki in den Unterricht – fast keine Zusatzlast für das Lehrpersonal, keine zusätzliche Unterrichtszeit, in Minuten einsatzbereit. Frei und Open Source.">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/de/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/de/about.html" class="nav-link">Über uns</a>
+      <a href="/de/community.html" class="nav-link">Community</a>
+      <a href="/de/tour.html" class="nav-link">Tour</a>
+      <a href="/de/blog.html" class="nav-link">Blog</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/" selected>Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/">中文</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/">العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">Bildungs- & Community-Initiative • Frei & offen für Schulen</p>
+      <h1>Helfen Sie Ihren Schülern, <span class="nb">voranzukommen</span> – und <span class="nb">vorne zu bleiben</span>.</h1>
+      <p class="hero-kicker">Was Sie im September unterrichten, ist im Mai noch da.</p>
+      <p class="hero-sub">
+        AnkiTov bringt <strong>Anki</strong> – die Engine für verteilte Wiederholung,
+        der Millionen Medizinstudierende und Polyglotte vertrauen – in Klassenzimmer
+        der Klassen 1–12, mit Klassenlisten, Lehrplan-Decks, einer Lehrkraft-Konsole
+        und <span class="nb">Datenschutz durch Architektur.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">Fast keine Zusatzlast für das Lehrpersonal</span>
+        <span class="hero-badge">Keine zusätzliche Unterrichtszeit</span>
+        <span class="hero-badge">In Minuten einsatzbereit</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta"><span class="nb">60-Sekunden-Überblick</span> ansehen ▸</a>
+        <a href="#how-it-works" class="cta-secondary">So läuft eine Klasse in 3 Schritten</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">AnkiTov laden →</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">Die Realität im Klassenzimmer</p>
+        <h2>Das Problem, in all seiner hässlichen Herrlichkeit</h2>
+        <p class="section-lead">
+          Schüler lernen ein Konzept am Montag, bestehen den Test am Freitag – und
+          <strong><span class="nb">30 Tage</span> später sind bis zu 80 % davon weg.</strong> Nicht, weil
+          Lehrkräfte es nicht unterrichtet oder Schüler es nicht versucht hätten. So verblasst
+          menschliches Gedächtnis nun einmal ohne Abrufen zum richtigen Zeitpunkt.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>Lehren, prüfen, verpuffen</h3>
+          <p>Schüler büffeln am Donnerstagabend, bestehen am Freitag – und einen Monat später ist das Wissen weg, genau wenn die nächste Einheit auf ebendiesen Grundlagen aufbaut.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3>Das Hamsterrad des <span class="nb">Wieder-Erklärens</span></h3>
+          <p>Wochen kostbarer Unterrichtszeit verschwinden im <span class="nb">Wieder-Erklären</span> von Stoff, der im September angeblich schon „durchgenommen“ wurde. Der Zeitplan rutscht; fortgeschrittene Themen fallen weg.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>Warum bewährte Tools <span class="nb">K–12</span> nie erreicht haben</h3>
+          <p>Die Kognitionswissenschaft hat das Behalten vor Jahrzehnten mit verteilten Wiederholungen (Spaced Repetition, SRS) gelöst. Aber Solo-Tools für Erwachsene wie Anki pur wurden nicht für 30 <span class="nb">Achtklässler</span>, einen Schul-Lehrplan oder die <span class="nb">45-Minuten-Vorbereitungszeit</span> einer Lehrkraft gebaut.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>Kommerzielle EdTech macht es schlimmer</h3>
+          <p><span class="nb">Pro-Sitzplatz</span>-Abos, E-Mail-<span class="nb">Registrierungen</span> für Schüler, Werbenetzwerke und Lernverläufe, die in <span class="nb">Drittanbieter</span>-Clouds landen – ein rechtliches und ethisches Minenfeld für <span class="nb">Schulverwaltungen.</span></p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>Schulen haben die Gedächtniswissenschaft nicht abgelehnt.</strong>
+          Ihnen fehlte schlicht die Unterrichts-Infrastruktur, die die Zeit der Lehrkräfte,
+          die Logistik der Klassen und die Privatsphäre der Schüler respektiert. <em>AnkiTov wurde gebaut, um genau diese <span class="nb">fehlende Schicht</span> zu sein.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong>Der <span class="nb">60-Sekunden-Überblick</span>.</strong>
+          Warum sich angelerntes Wissen schnell verflüchtigt, wie verteiltes Abrufen es verankert und wie AnkiTov in einer echten Schule läuft – ganz ohne Schülerkonten und ohne Tracking.
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="Animiertes Diagramm: Ohne Wiederholung verblasst das Gedächtnis schnell, doch jede kurze Wiederholung frischt es auf – so gehen Schüler mit noch vorhandenem Wissen in die Prüfung.">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">Was Schüler behalten</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">Zeit →</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Tag 1</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Woche 1</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Woche 3</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Prüfung</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">Kurze Wiederholung</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">Kurze Wiederholung</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">Kurze Wiederholung</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">Mit AnkiTov: noch präsent</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">Ohne: größtenteils weg</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">Unterricht gehalten</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>Mit kurzen AnkiTov-Wiederholungen</span>
+          <span class="key"><span class="swatch without"></span>Einmal gebüffelt, dann nichts mehr</span>
+          <span class="key"><span class="swatch review"></span>Eine <span class="nb">kurze</span> Wiederholung stoppt das Verblassen</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">Mühelose Einführung</p>
+        <h2>Wie AnkiTov das löst – in Minuten, nicht Monaten</h2>
+        <p class="section-lead section-lead--full">
+          Entworfen für die Realität im Klassenzimmer:<br>
+          <span class="nb">keine zusätzlichen Lektionen vorzubereiten,</span>
+          <span class="nb">keine einzelnen Konten zu warten,</span> und
+          <span class="nb">keine Änderung an Ihrem Unterricht.</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">Schritt 1 • ca. 2 Minuten</div>
+          <h3>Deck einspielen & einen <span class="nb">6-buchstabigen</span> <span class="nb">Klassencode</span> teilen</h3>
+          <p>Importieren Sie jedes gängige <span class="nb">Anki-<code>.apkg</code>-Deck</span> – oder <span class="nb">starten Sie sofort</span> mit unseren offenen Lehrplan-Seed-Decks. Zuweisung zur Klasse in <span class="nb">zwei Klicks.</span> Keine Schüler-E-Mails, keine Passwörter, keine <span class="nb">IT-Tickets nötig.</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">Schritt 2 • Minuten täglich</div>
+          <h3>Zu Hause, im Bus oder als <span class="nb">Einstiegsaufgabe</span> von <span class="nb">weniger als 15 Minuten</span></h3>
+          <p>Schüler wiederholen zu Hause oder beim <span class="nb">Aufwärmen</span>, während Sie die Anwesenheit erfassen – <span class="nb">weniger als 15 Minuten</span> täglich.<br>Der FSRS-Scheduler holt nur die Karten hervor, die kurz vorm Verblassen sind – und verwebt die Grundlagen aus September mit der Einheit dieser Woche.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">Schritt 3 • Ein Blick vor der Stunde</div>
+          <h3>Erkennen Sie <span class="nb">klassenweite</span> Lücken vor der <span class="nb">Prüfung am Freitag</span></h3>
+          <p>Ihre Lehrkraft-Konsole macht aus einzelnen Wiederholungsprotokollen eine Live-Sicht auf das Behalten. Wenn die halbe Klasse bei einer bestimmten Formel oder Vokabelliste stolpert, sehen Sie das sofort – und klären es in wenigen Minuten, statt <span class="nb">zwei Wochen Stoff zu wiederholen.</span></p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">Fertig einsetzbare</span> offene Seed-Decks (CC0 Public Domain • je 105 Karten):</strong>
+          <span>Direkt im Klassenpiloten einsetzen oder in Anki anpassen:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">Mathematik: Definitionen (EN & HE)</span>
+          <span class="seed-pill">Naturwissenschaft: Begriffe (EN & HE)</span>
+          <span class="seed-pill">Geschichte: Jahreszahlen & Persönlichkeiten (EN & FR)</span>
+          <span class="seed-pill">Englisch: Akademisches Vokabular</span>
+          <span class="seed-pill">+ Jedes gängige Anki <code>.apkg</code>-Deck</span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>Ohne verteiltes Üben</h3>
+          <ul>
+            <li>Donnerstag gebüffelt → Freitag bestanden → nächsten Monat vergessen</li>
+            <li>Wochen verloren für Wiederholungspakete vor Zwischen- und Abschlussprüfungen</li>
+            <li>Sie erfahren erst <em>nach</em> der Korrektur, wer den Anschluss verloren hat</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>Mit AnkiTov an der Seite Ihres Unterrichts</h3>
+          <ul>
+            <li>Minuten täglich halten jede <span class="nb">frühere Einheit</span> <span class="nb">das ganze Jahr warm</span></li>
+            <li>Keine zusätzliche Unterrichtszeit – läuft leise neben Ihren Stunden</li>
+            <li>Schüler starten in fortgeschrittene Einheiten und beherrschen die Grundlagen bereits fließend</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>Drei Garantien für jede Schule</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>Behalten mit <span class="nb">Zinseszins</span></h3>
+          <p>Angetrieben von moderner FSRS-Planung. Schüler wiederholen jedes Konzept genau dann, wenn es zu verblassen droht – so wird aus <span class="nb">kurzfristigem</span> Massenlernen dauerhaftes Können, das <span class="nb">ein ganzes Jahr hält.</span></p>
+        </div>
+        <div class="pillar">
+          <h3>Datenschutz <span class="nb">durch Architektur</span></h3>
+          <p>Keine personenbezogenen Schülerdaten, keine Tracker, keine Telemetrie, keine ausgehenden Cloud-Aufrufe – Schülerdaten verlassen Ihre Schule nie. Compliance by Design, nicht im Kleingedruckten.</p>
+        </div>
+        <div class="pillar">
+          <h3>Offenes Format, <span class="nb">kein Lock-in</span></h3>
+          <p>Decks sind gewöhnliche <code>.apkg</code>-Dateien – das offene Format des Anki-Ökosystems. Ihre Lehrplanmaterialien und Lernverläufe gehören für immer Ihrer Schule.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>Gebaut für jede Rolle an der Schule</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>Lehrkräfte & <span class="nb">Fachbereichsleitungen</span></h3>
+          <p>Spielen Sie Karten im Takt Ihres Lehrplans frei, sehen Sie, welche Konzepte eine <span class="nb">kurze</span> Auffrischung brauchen, und erleben Sie, wie Schüler echte Sicherheit aufbauen – mit <strong>fast keiner Zusatzlast für Ihre Vorbereitungszeit und ohne zusätzliche Unterrichtszeit.</strong></p>
+        </div>
+        <div class="block">
+          <h3>Schulleitungen & <span class="nb">IT-Verantwortliche</span></h3>
+          <p>In Minuten einsatzbereit auf Infrastruktur, die Sie bereits haben. Keine Schüler-E-Mails und keine personenbezogenen Daten werden erhoben, keine <span class="nb">Drittanbieter</span>-Dienstleister zu prüfen und keine <span class="nb">pro Sitzplatz</span> abgerechneten SaaS-Verlängerungen, die Ihr Budget auffressen.</p>
+        </div>
+        <div class="block">
+          <h3>Schülerinnen und Schüler</h3>
+          <p>Stressiges Büffeln <span class="nb">in der Nacht vorher</span> weicht einer ruhigen Gewohnheit von <span class="nb">wenigen Minuten täglich</span>, die wirklich hängen bleibt. So gehen Schüler in jeden Test – und haben den Stoff sitzen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>Ein Blick in den Unterricht</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="Deck-Browser mit dem Deck „Mathematik: Definitionen“ des AnkiTov-Piloten – mit Zahlen für neu, lernen und fällig" loading="lazy">
+          <figcaption>
+            <strong>1. Bibliothek der Lehrplan-Decks</strong>
+            <span class="nb">Fertig einsetzbare</span> mehrsprachige Seed-Decks für die Kernfächer. Gewöhnliche Anki-<code>.apkg</code>-Dateien – leicht zu importieren, im Fachbereich zu teilen und zu erweitern.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="Eine beantwortete Karte mit dem Wort grievous, seiner Definition und den Schaltflächen Again und Good mit den nächsten Intervallen" loading="lazy">
+          <figcaption>
+            <strong>2. <span class="nb">Ablenkungsfreies</span> Wiederholen für Schüler</strong>
+            Sauberes Kiosk-Wiederholen mit zwei einfachen Schaltflächen (<em>Again</em> / <em>Good</em>) und strikter FSRS-Gedächtnisplanung dahinter.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="IMP-Konsole für Lehrkräfte mit Klassen, Schülern, Seed-Decks und einer Live-Heatmap zum Behalten der ganzen Klasse" loading="lazy">
+          <figcaption>
+            <strong>3. Lehrkraft-Konsole & Live-Überblick zum Behalten</strong>
+            Bündelt die Wiederholungsprotokolle der Schüler in einer <span class="nb">klassenweiten</span> Heatmap zum Behalten – so erkennen Sie bröckelnde Konzepte, bevor der Test am Freitag ansteht.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="Eine hebräische Mathe-Karte von rechts nach links mit aufgedeckter Antwort und den Schaltflächen Again und Good" loading="lazy">
+          <figcaption>
+            <strong>4. <span class="nb">Erstklassige</span> Mehrsprachigkeit & RTL</strong>
+            Englisch, Hebräisch, Arabisch, Französisch, Spanisch und 13 Sprachversionen – <span class="nb">rechts-nach-links</span>-Schriften und mathematische Notation werden ab Werk sauber gerendert.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">Für IT-Leitungen & Schulleitungen</p>
+      <h2>Was es braucht, um ein <span class="nb">Schul-Pilotprojekt</span> zu starten</h2>
+      <div class="grid-3">
+        <div>
+          <h3>Jede Hardware, die Sie <span class="nb">schon haben</span></h3>
+          <p>Läuft auf einem einzelnen Schul-Mac, Windows-PC oder Linux-Rechner im lokalen Netz – oder auf einem privaten VPS für 5 $/Monat. Bedient problemlos 200+ gleichzeitige Schüler über das <span class="nb">Schul-WLAN.</span></p>
+        </div>
+        <div>
+          <h3>Eine einzige Binärdatei, <span class="nb">keine Abhängigkeiten</span></h3>
+          <p>Eine <span class="nb">in sich geschlossene</span> ausführbare Datei mit eingebettetem SQLite. Kein externer Datenbankserver, kein Docker nötig, kein ausgehender Internetzugang erforderlich.</p>
+        </div>
+        <div>
+          <h3>Auditfest dank <span class="nb">Zero-PII</span></h3>
+          <p>Schüler treten über einen anonymen <span class="nb">6-buchstabigen</span> Klassencode bei. Keine Schülernamen, E-Mails oder Geräte-Kennungen verlassen Ihr Gebäude.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>Die Kognitionswissenschaft ist eindeutig. Das sagen Lernende <span class="nb">über Anki.</span></h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>„Ich werde nicht versuchen, meine Begeisterung für Anki hinter einer respektablen Fassade von Unparteilichkeit zu verstecken: Sie ist ein bedeutender Teil meines Lebens.“</p>
+          <cite>— <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>, <em>Augmenting <span class="nb">Long-term Memory</span></em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>„Systeme mit verteilten Wiederholungen machen Erinnern zur Entscheidung.“</p>
+          <cite>— <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>, <em>Working notes</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>„Diese App hat mein Leben verändert. Dank Anki konnte ich mein Studium abschließen und die Armee verlassen. Dank dieser App konnte ich für meine Familie sorgen.“</p>
+          <cite>— <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>, r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTov bringt genau diese Engine mit <span class="nb">derselben Wirkung</span> zu Schülerinnen und Schülern der Sekundarstufe – verpackt mit Klassenverwaltung und Datenschutz, wie eine Schule es braucht.
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>Was die <span class="nb">AnkiTov-Organisation</span> macht</h2>
+      <ul class="bullets">
+        <li><strong>Offene Lehrplanmaterialien</strong> – mehrsprachige Seed-Decks und Lernstrukturen für zentrale <span class="nb">K–12-Fächer.</span></li>
+        <li><strong>Community für Lehrkräfte</strong> – Lehrkräfte, Tutorinnen und Tutoren sowie Lernkoordinatoren teilen Unterrichts-Workflows.</li>
+        <li><strong>Offene Tools & Standards</strong> – Decks, Planungsalgorithmen und Schülerdaten bleiben portabel und Open Source.</li>
+        <li><strong>Forschungsübersetzung</strong> – <span class="nb">verständlich geschriebene</span> Leitfäden, wie sich Abrufüben anwenden lässt, ohne die Arbeitslast der Lehrkräfte zu erhöhen.</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>Pilotieren Sie AnkiTov in Ihrem Klassenzimmer <span class="nb">oder Ihrer Schule</span></h2>
+      <p>Sie möchten Hilfe beim Aufsetzen eines Klassenpiloten, beim Import Ihres ersten Decks oder bei der Prüfung unserer Datenschutz-Architektur?</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/de/">Start</a>
+      <a href="/de/about.html">Über uns & Mission</a>
+      <a href="/de/community.html">Community</a>
+      <a href="/de/tour.html">Tour</a>
+      <a href="/de/blog.html">Blog</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>© AnkiTov-Organisation. Gebaut von einer kleinen Community aus Lehrkräften und Entwicklern.</p>
+    <p class="footer-note">AnkiTov ist ein unabhängiges <span class="nb">Open-Source</span>-Projekt – weder verbunden mit noch gebilligt von Ankitects, den Machern von <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a>.</p>
+    <p class="footer-note">Keine Cookies • Keine Tracker • Keine Telemetrie – nur verteilte Wiederholung.</p>
+  </footer>
+</body>
+</html>

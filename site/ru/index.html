@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov — помогите ученикам выйти вперёд. Интервальное повторение для занятий в классе.</title>
+  <meta name="description" content="Ученики разбирают тему в понедельник, справляются с тестом в пятницу, а через 30 дней 80% материала забыто. AnkiTov приносит Anki — систему интервального повторения, которой доверяют сами школьники, — в школы: классы, учительскую консоль и приватность на уровне архитектуры. Минимальная нагрузка на учителей. Никакого дополнительного времени на уроках.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov — помогите ученикам выйти вперёд. Интервальное повторение для занятий в классе.">
+  <meta property="og:description" content="То, что вы преподаёте в сентябре, всё ещё в памяти в мае. AnkiTov приносит Anki в класс — минимальная нагрузка на учителей, никакого дополнительного времени на уроках, запуск за считанные минуты. Бесплатно и с открытым кодом.">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/ru/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/ru/about.html" class="nav-link">О проекте</a>
+      <a href="/ru/community.html" class="nav-link">Сообщество</a>
+      <a href="/ru/tour.html" class="nav-link">Тур</a>
+      <a href="/ru/blog.html" class="nav-link">Заметки</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/" selected>Русский</option><option value="/zh/">中文</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/">العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">Инициатива сообщества в сфере образования &bull; Бесплатно и открыто для школ</p>
+      <h1>Помогите ученикам <span class="nb">вырваться вперёд</span> &mdash; и <span class="nb">остаться впереди</span>.</h1>
+      <p class="hero-kicker">То, что вы преподаёте в сентябре, всё ещё в памяти в мае.</p>
+      <p class="hero-sub">
+        AnkiTov приносит <strong>Anki</strong> — движок интервального повторения,
+        которому доверяют миллионы студентов-медиков и полиглотов, — в школьные классы:
+        со списками классов, учебными колодами, учительской консолью
+        и <span class="nb">приватностью на уровне архитектуры.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">Минимальная нагрузка на учителей</span>
+        <span class="hero-badge">Без дополнительного времени на уроках</span>
+        <span class="hero-badge">Запуск за считанные минуты</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta">Посмотрите <span class="nb">60-секундный</span> обзор &blacktriangleright;</a>
+        <a href="#how-it-works" class="cta-secondary">Как проходит занятие: 3 шага</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">Скачать AnkiTov &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">Реальность класса</p>
+        <h2>Проблема во всей её неприглядной красе</h2>
+        <p class="section-lead">
+          Ученики разбирают тему в понедельник, справляются с проверочной в пятницу &mdash; и
+          <strong><span class="nb">через 30 дней</span> забывается до 80%.</strong> И дело не в том,
+          что учитель плохо объяснил или ученики не старались. Просто так устроена
+          человеческая память: без повторений по расписанию знания выветриваются.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>Объяснили, проверили — и всё испарилось</h3>
+          <p>Ученики зазубривают материал в четверг вечером, сдают работу в пятницу, а через месяц в голове пусто &mdash; ровно тогда, когда следующая тема строится на этих самых основах.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3>Карусель <span class="nb">повторных</span> объяснений</h3>
+          <p>Недели драгоценного времени на уроках уходят на <span class="nb">повторное</span> объяснение материала, который &laquo;пройден&raquo; ещё в сентябре. Программа отстаёт, сложные темы приходится сокращать.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>Почему проверенные инструменты не доходят до <span class="nb">школ</span></h3>
+          <p>Когнитивная наука ещё десятилетия назад решила проблему запоминания с помощью интервального повторения (SRS). Но одиночные &laquo;взрослые&raquo; инструменты вроде чистого Anki не рассчитаны на 30 <span class="nb">восьмиклассников</span>, школьную программу или <span class="nb">45-минутную</span> подготовку между уроками.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>Коммерческий EdTech только усугубляет дело</h3>
+          <p><span class="nb">Подписки с оплатой</span> за каждого ученика, регистрация школьников через <span class="nb">личную почту</span>, рекламные сети и учебная история, утекающая в <span class="nb">сторонние</span> облака &mdash; юридическая и этическая мина замедленного действия для <span class="nb">школьной администрации.</span></p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>Школы никогда не отвергали науку о памяти.</strong>
+          Им просто не хватало классной инфраструктуры, которая бережёт время учителя,
+          логистику целого класса и приватность учеников. <em>AnkiTov создан именно как этот <span class="nb">недостающий слой.</span></em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">60-секундный</span> обзор.</strong>
+          Почему зубрёжка выветривается, как интервальное повторение закрепляет знания и как AnkiTov живёт в настоящей школе &mdash; без единого ученического аккаунта и слежки.
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="Анимированный график: без повторений память тает быстро, но каждое короткое повторение возвращает знания, и на экзамен ученики приходят, всё ещё помня материал.">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">Что помнят ученики</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">время &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">День 1</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Неделя 1</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Неделя 3</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">Экзамен</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">Повторение · 2 мин</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">Повторение · 2 мин</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">Повторение · 2 мин</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">С AnkiTov: всё ещё помнят</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">Без повторений: почти всё забыто</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">Урок объяснён</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>С короткими повторениями в AnkiTov</span>
+          <span class="key"><span class="swatch without"></span>Один раз зазубрил — и всё</span>
+          <span class="key"><span class="swatch review"></span><span class="nb">2-минутное</span> повторение возвращает знания</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">Лёгкое внедрение</p>
+        <h2>Как AnkiTov решает проблему &mdash; за минуты, а не за месяцы</h2>
+        <p class="section-lead section-lead--full">
+          Создано с прицелом на реальный класс:<br>
+          <span class="nb">ни одного дополнительного урока для подготовки,</span>
+          <span class="nb">ни одного личного аккаунта для настройки,</span> и
+          <span class="nb">никаких перемен в том, как вы преподаёте.</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">Шаг 1 &bull; ~2 минуты</div>
+          <h3>Загрузите колоду и раздайте ученикам <span class="nb">6-буквенный</span> <span class="nb">код класса</span></h3>
+          <p>Импортируйте любую стандартную <span class="nb">колоду Anki <code>.apkg</code></span> &mdash; или <span class="nb">начните сразу</span> с наших открытых учебных колод. Назначьте её классу в <span class="nb">два клика.</span> Никаких ученических почт, паролей и <span class="nb">заявок в IT-отдел.</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">Шаг 2 &bull; несколько минут в день</div>
+          <h3>Дома, в автобусе или как <span class="nb">разминка в начале урока</span> на <span class="nb">менее 15 минут</span></h3>
+          <p>Ученики повторяют дома или во время <span class="nb">разминки</span>, пока вы отмечаете присутствующих, &mdash; <span class="nb">менее 15 минут</span> в день.<br>Планировщик FSRS выводит только те карточки, которые начинают забываться, &mdash; и вплетает сентябрьские основы в тему этой недели.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">Шаг 3 &bull; Взгляд перед уроком</div>
+          <h3>Замечайте <span class="nb">пробелы всего класса</span> до <span class="nb">пятничной проверочной</span></h3>
+          <p>Учительская консоль превращает личные журналы повторений в живую карту усвоения. Если полкласса буксует на конкретной формуле или группе слов, вы видите это сразу &mdash; и тратите две минуты на разбор, а не <span class="nb">две недели на повторное объяснение.</span></p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">Готовые к запуску</span> открытые стартовые колоды (общественное достояние CC0 &bull; по 105 карточек):</strong>
+          <span>Берите в пилотный класс как есть или доработайте в Anki:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">Определения по математике (EN &amp; HE)</span>
+          <span class="seed-pill">Научные термины (EN &amp; HE)</span>
+          <span class="seed-pill">История: даты и персоны (EN &amp; FR)</span>
+          <span class="seed-pill">Академическая лексика английского</span>
+          <span class="seed-pill">+ любая стандартная колода Anki <code>.apkg</code></span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>Без интервальных повторений</h3>
+          <ul>
+            <li>Зазубрил в четверг &rarr; сдал в пятницу &rarr; к следующему месяцу всё забыто</li>
+            <li>Недели уходят на повторительные раздатки к промежуточным и итоговым работам</li>
+            <li>Вы узнаёте, кто отстал, <em>лишь после</em> того как работа проверена</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>С AnkiTov рядом с вашими уроками</h3>
+          <ul>
+            <li>Несколько минут в день &mdash; и все <span class="nb">пройденные темы</span> <span class="nb">свежи весь год</span></li>
+            <li>Ноль дополнительного времени на уроках &mdash; работает тихо, параллельно вашим занятиям</li>
+            <li>К сложным темам ученики приходят, уже свободно владея базой</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>Три гарантии для каждой школы</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>Запоминание, <span class="nb">которое накапливается</span></h3>
+          <p>Работает на современном планировщике FSRS. Ученики повторяют каждую тему ровно перед тем, как она начинает забываться, &mdash; превращая <span class="nb">краткосрочную</span> зубрёжку в прочное знание, <span class="nb">рассчитанное на весь год.</span></p>
+        </div>
+        <div class="pillar">
+          <h3>Приватность <span class="nb">на уровне архитектуры</span></h3>
+          <p>Ноль персональных данных учеников, ноль трекеров, ноль телеметрии, ноль обращений во внешние облака &mdash; данные учеников никогда не покидают вашу школу. Соответствие требованиям заложено в конструкцию, а не спрятано в мелком шрифте.</p>
+        </div>
+        <div class="pillar">
+          <h3>Открытый формат, <span class="nb">никакой привязки</span></h3>
+          <p>Колоды &mdash; стандартные файлы <code>.apkg</code>, открытый формат экосистемы Anki. Учебные материалы и история обучения навсегда остаются у вашей школы.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>Создано для каждой роли в школе</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>Учителя и <span class="nb">завучи</span></h3>
+          <p>Выкладывайте карточки в ритме вашей программы, замечайте, какие темы требуют <span class="nb">2-минутного</span> повтора, и наблюдайте, как ученики по-настоящему осваивают материал &mdash; при <strong>почти нулевой нагрузке на вашу подготовку и без дополнительного времени на уроках.</strong></p>
+        </div>
+        <div class="block">
+          <h3>Директора и <span class="nb">IT-администраторы</span></h3>
+          <p>Разворачивается за минуты на инфраструктуре, которая у вас уже есть. Ученические почты и персональные данные не собираются, <span class="nb">сторонних</span> обработчиков данных проверять не нужно, и никакие продления SaaS-подписок <span class="nb">за каждое место</span> не съедают бюджет.</p>
+        </div>
+        <div class="block">
+          <h3>Ученики</h3>
+          <p>Замените нервную зубрёжку <span class="nb">в ночь перед</span> экзаменом спокойной привычкой тратить <span class="nb">несколько минут в день</span>, которая действительно приживается. Приходите на любую проверку, уже твёрдо зная материал.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>Как это выглядит в классе</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="Обозреватель колод со списком: колода Math Definitions из пилота AnkiTov со счётчиками новых, изучаемых и ожидающих карточек" loading="lazy">
+          <figcaption>
+            <strong>1. Библиотека учебных колод</strong>
+            <span class="nb">Готовые к работе</span> многоязычные стартовые колоды по базовым предметам. Стандартные файлы Anki <code>.apkg</code> &mdash; легко импортировать, делиться внутри кафедры и дополнять.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="Открытая карточка со словом grievous, его определением и кнопками Again и Good со следующими интервалами" loading="lazy">
+          <figcaption>
+            <strong>2. Повторение <span class="nb">без отвлечений</span></strong>
+            Чистый киоск-режим с двумя простыми кнопками (<em>Again</em> / <em>Good</em>) и строгим планированием памяти FSRS под капотом.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="Учительская консоль IMP: классы, ученики, стартовые колоды и живая тепловая карта усвоения всего класса" loading="lazy">
+          <figcaption>
+            <strong>3. Консоль учителя и живая карта усвоения</strong>
+            Собирает журналы повторений в <span class="nb">общеклассную</span> тепловую карту усвоения &mdash; вы замечаете тающие темы до пятничной проверочной.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="Карточка по математике на иврите (справа налево) с открытым ответом и кнопками Again и Good" loading="lazy">
+          <figcaption>
+            <strong>4. <span class="nb">Мультиязычность</span> и RTL на равных</strong>
+            Английский, иврит, арабский, французский, испанский и ещё 13 локалей &mdash; <span class="nb">письмо справа налево</span> и математическая нотация аккуратно работают &laquo;из коробки&raquo;.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">Для IT-директоров и руководителей школ</p>
+      <h2>Что нужно для <span class="nb">школьного пилота</span></h2>
+      <div class="grid-3">
+        <div>
+          <h3>Любое оборудование, которое <span class="nb">уже есть</span></h3>
+          <p>Работает на одном школьном Mac, ПК с Windows или Linux-машине в локальной сети &mdash; или на частном VPS за $5 в месяц. Легко обслуживает 200+ учеников одновременно через <span class="nb">школьный Wi-Fi.</span></p>
+        </div>
+        <div>
+          <h3>Один бинарник, <span class="nb">ноль зависимостей</span></h3>
+          <p>Один <span class="nb">самодостаточный</span> исполняемый файл со встроенной SQLite. Никакого внешнего сервера БД, Docker не нужен, исходящий интернет не требуется.</p>
+        </div>
+        <div>
+          <h3><span class="nb">Ноль персональных данных</span> при любой проверке</h3>
+          <p>Ученики присоединяются по анонимному <span class="nb">6-буквенному</span> коду класса. Имена, почты и идентификаторы устройств учеников никогда не покидают вашу школу.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>Когнитивная наука здесь давно всё решила. Вот что говорят учащиеся <span class="nb">об Anki.</span></h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>&laquo;Я не стану прятать свой энтузиазм по поводу Anki за респектабельной маской беспристрастности: это значимая часть моей жизни.&raquo;</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>, <em>&laquo;Расширение <span class="nb">долговременной памяти</span>&raquo;</em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>&laquo;Системы интервального повторения делают память делом выбора.&raquo;</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>, <em>Рабочие заметки</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>&laquo;Это приложение изменило мою жизнь. Благодаря Anki я смог окончить колледж и уйти из армии. Благодаря этому приложению я смог обеспечивать свою семью.&raquo;</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>, r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTov приносит этот самый <span class="nb">меняющий жизнь</span> движок ученикам средних и старших классов &mdash; в обёртке из управления классами и приватности, которых требует школа.
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>Чем занимается организация <span class="nb">AnkiTov</span></h2>
+      <ul class="bullets">
+        <li><strong>Открытые учебные материалы</strong> &mdash; многоязычные стартовые колоды и учебные структуры по базовым <span class="nb">школьным предметам.</span></li>
+        <li><strong>Сообщество педагогов</strong> &mdash; учителя, репетиторы и координаторы обучения делятся рабочими практиками класса.</li>
+        <li><strong>Открытые инструменты и стандарты</strong> &mdash; колоды, алгоритмы планирования и данные учеников остаются переносимыми и открытыми.</li>
+        <li><strong>Перевод науки в практику</strong> &mdash; <span class="nb">простым языком</span> о том, как применять практику извлечения, не добавляя учителям работы.</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>Запустите пилот AnkiTov в своём классе <span class="nb">или школе</span></h2>
+      <p>Нужна помощь с пилотным классом, импортом первой колоды или разбором нашей архитектуры приватности?</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/ru/">Главная</a>
+      <a href="/ru/about.html">О проекте и миссии</a>
+      <a href="/ru/community.html">Сообщество</a>
+      <a href="/ru/tour.html">Тур</a>
+      <a href="/ru/blog.html">Заметки</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; Организация AnkiTov. Создана небольшим сообществом педагогов и инженеров.</p>
+    <p class="footer-note">AnkiTov &mdash; независимый проект с <span class="nb">открытым кодом</span>, никак не связан с Ankitects, создателями <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a>, и не одобрен ими.</p>
+    <p class="footer-note">Без cookies &bull; Без трекеров &bull; Без телеметрии &mdash; только интервальное повторение.</p>
+  </footer>
+</body>
+</html>

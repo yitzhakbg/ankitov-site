@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov — 生徒を一歩先へ導く。教室のための間隔反復。</title>
+  <meta name="description" content="月曜日に学んだ概念は金曜日のテストに通るのに、30日後には最大80%が消えています。AnkiTovは、学習者に信頼される間隔反復システムAnkiをK–12の学校へ届けます。クラス名簿、教師用コンソール、そしてアーキテクチャによるプライバシー保護。教職員への負担はほぼゼロ。授業時間の追加も不要。">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov — 生徒を一歩先へ導く。教室のための間隔反復。">
+  <meta property="og:description" content="9月に教えたことは、5月にも残っています。AnkiTovはAnkiを教室へ届けます —— 教職員の負担はほぼゼロ、授業時間の追加は不要、数分で稼働。フリー・オープンソース。">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/ja/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/ja/about.html" class="nav-link">概要</a>
+      <a href="/ja/community.html" class="nav-link">コミュニティ</a>
+      <a href="/ja/tour.html" class="nav-link">ツアー</a>
+      <a href="/ja/blog.html" class="nav-link">ノート</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/">中文</option><option value="/ja/" selected>日本語</option><option value="/ko/">한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/">العربية</option><option value="/he/">עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">コミュニティ&amp;教育イニシアチブ &bull; 学校に無料&amp;オープン</p>
+      <h1>生徒を<span class="nb">一歩先へ</span>&mdash;そして<span class="nb">その先も維持</span>。</h1>
+      <p class="hero-kicker">9月に教えたことは、5月にも残っています。</p>
+      <p class="hero-sub">
+        AnkiTovは、<strong>Anki</strong> —— 数多くの医学生や
+        ポリグロットに信頼される間隔反復エンジン —— をK&ndash;12の教室へ届けます。
+        クラス名簿、カリキュラムデッキ、教師用コンソール、
+        そして<span class="nb">アーキテクチャによるプライバシー。</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">教職員への負担はほぼゼロ</span>
+        <span class="hero-badge">授業時間の追加は不要</span>
+        <span class="hero-badge">数分で稼働開始</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta"><span class="nb">60秒</span>の概要動画を見る &blacktriangleright;</a>
+        <a href="#how-it-works" class="cta-secondary">3ステップでわかる授業の運用</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">AnkiTovを入手 &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">教室の現実</p>
+        <h2>その問題、ありのままの全貌</h2>
+        <p class="section-lead">
+          生徒は月曜日に概念を学び、金曜日の小テストに合格 &mdash;
+          <strong><span class="nb">30日</span>後には、最大80%が失われています。</strong> 決して
+          教師が教えなかったからでも、生徒が頑張らなかったからでもありません。
+          タイミングよく思い出す機会がなければ、人の記憶はただ減衰していくだけなのです。
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>教えて、テストして、蒸発する</h3>
+          <p>生徒は木曜の夜に詰め込み、金曜に合格し、1か月後には白紙に戻る &mdash; まさに次の単元がその基礎の上に積み上がる頃に。</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3><span class="nb">再教育</span>のトレッドミル</h3>
+          <p>貴重な授業時間の数週間が、9月にすでに「終わった」はずの内容の<span class="nb">説明し直し</span>に消えていきます。進度は遅れ、発展的なトピックは削られます。</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>実証済みのツールが<span class="nb">K&ndash;12</span>に届かないのはなぜか</h3>
+          <p>認知科学は数十年前に間隔反復（SRS）で定着の問題を解決しました。しかし素のAnkiのような大人の個人用ツールは、30人の<span class="nb">中学2年生</span>や学校のシラバス、教師の<span class="nb">45分</span>の準備時間のためには作られていませんでした。</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>商用EdTechは事態を悪化させる</h3>
+          <p><span class="nb">座席単位</span>のサブスクリプション、生徒のメール<span class="nb">登録</span>、広告ネットワーク、<span class="nb">サードパーティー</span>のクラウドへ流れる学習履歴 &mdash; <span class="nb">学校の管理者。</span>にとって法的・倫理的な地雷原です。</p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>学校が記憶の科学を拒んできたわけではありません。</strong>
+          教師の時間、クラスの運営、生徒のプライバシーを尊重する教室インフラが
+          単純に不足していただけです。<em>AnkiTovは、まさにその<span class="nb">欠けた層。</span>として作られました。</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">60秒</span>の概要動画。</strong>
+          なぜ詰め込みは消え、間隔を置いた想起が知識を定着させるのか、そしてAnkiTovが実際の学校でどう動くのか &mdash; 生徒のアカウントもトラッキングもゼロで。
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="アニメーションチャート：復習しないと記憶は急速に失われますが、短い復習のたびに回復します。こうして生徒はテスト当日も内容を覚えたまま臨めます。">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">生徒が覚えていること</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">時間 &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">1日目</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">第1週</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">第3週</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">テスト</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">短い復習</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">短い復習</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">短い復習</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">AnkiTovあり：まだ覚えている</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">なし：ほぼ消失</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">授業で学習</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>短いAnkiTov復習を重ねた場合</span>
+          <span class="key"><span class="swatch without"></span>一度だけ詰め込み、そのまま放置</span>
+          <span class="key"><span class="swatch review"></span><span class="nb">短い復習</span>で減衰をリセット</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">手間いらずの導入</p>
+        <h2>AnkiTovの解決方法 &mdash; 数か月ではなく、数分で</h2>
+        <p class="section-lead section-lead--full">
+          教室の現実に合わせて設計:<br>
+          <span class="nb">準備する追加の授業はゼロ、</span>
+          <span class="nb">管理する個人アカウントはゼロ、</span>そして
+          <span class="nb">授業のやり方の変更もゼロ。</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">ステップ 1 &bull; 数分の設定</div>
+          <h3>デッキを追加して<span class="nb">6文字</span>の<span class="nb">クラスコード</span>を共有</h3>
+          <p>標準的な<span class="nb">Anki <code>.apkg</code>デッキ</span>をインポート &mdash; または公開カリキュラムのシードデッキで<span class="nb">すぐに開始</span>。<span class="nb">2クリック。</span>でクラスに割り当て。生徒のメールアドレスもパスワードも<span class="nb">ITへの申請も不要。</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">ステップ 2 &bull; 毎日ほんの数分</div>
+          <h3>自宅で、通学中に、あるいは<span class="nb">15分未満</span>の<span class="nb">授業前レビュー</span>として</h3>
+          <p>生徒は自宅や、出欠確認をしている間の<span class="nb">朝のホームルーム</span>で復習します &mdash; <span class="nb">1日15分未満</span>。<br>FSRSスケジューラは、まさに消えかけのカードだけを表示 &mdash; 9月の基礎と今週の単元を織り合わせます。</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">ステップ 3 &bull; 授業前にひと目</div>
+          <h3><span class="nb">金曜の小テスト</span>の前に、<span class="nb">クラス全体</span>の弱点を把握</h3>
+          <p>教師コンソールは個々の復習ログをリアルタイムの定着ビューに変えます。クラスの半分が特定の公式や語彙でつまずいていれば、即座に見えます &mdash; 数分で対処でき、<span class="nb">2週間の再教育。</span>には至りません。</p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">すぐ使える</span>オープンシードデッキ（CC0パブリックドメイン &bull; 各105枚）:</strong>
+          <span>クラスパイロットにそのまま投入、またはAnkiでカスタマイズ:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">数学の定義（EN &amp; HE）</span>
+          <span class="seed-pill">科学用語（EN &amp; HE）</span>
+          <span class="seed-pill">歴史：年号&amp;人物（EN &amp; FR）</span>
+          <span class="seed-pill">英語アカデミック語彙</span>
+          <span class="seed-pill">+ 標準的なAnki <code>.apkg</code>デッキなら何でも</span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>間隔を空けた復習なしの場合</h3>
+          <ul>
+            <li>木曜に詰め込み &rarr; 金曜に合格 &rarr; 翌月には忘却</li>
+            <li>中間・期末の復習プリントに数週間を浪費</li>
+            <li>誰が取り残されたかに気づくのは、テストの<em>採点後</em></li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>AnkiTovを授業に添えて使う場合</h3>
+          <ul>
+            <li><span class="nb">学習済みの単元</span>が<span class="nb">1年中生きたまま</span>、1日ほんの数分で保たれる</li>
+            <li>授業時間の追加はゼロ &mdash; 授業のそばで静かに動く</li>
+            <li>生徒は基礎をすでに身につけた状態で発展単元に入れる</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>すべての学校への3つの保証</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>複利で効く<span class="nb">定着力</span></h3>
+          <p>最新のFSRSスケジューリングで駆動。各概念を失効寸前に復習する &mdash; <span class="nb">短期</span>の詰め込みを、持続する<span class="nb">1年もの習熟。</span>へ変えます。</p>
+        </div>
+        <div class="pillar">
+          <h3><span class="nb">アーキテクチャ</span>によるプライバシー</h3>
+          <p>生徒の個人情報ゼロ、トラッカーゼロ、テレメトリゼロ、外部クラウド呼び出しゼロ &mdash; 生徒のデータは学校の外に出ません。細則ではなく設計によるコンプライアンス。</p>
+        </div>
+        <div class="pillar">
+          <h3>オープン形式、<span class="nb">ロックインなし</span></h3>
+          <p>デッキは標準的な<code>.apkg</code>ファイル &mdash; Ankiエコシステムのオープン形式。カリキュラム教材と学習記録は、永久にあなたの学校のものです。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>学校のすべての立場の人のために</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>教師&amp;<span class="nb">教科主任</span></h3>
+          <p>シラバスの進度に合わせてカードを公開し、<span class="nb">短めの復習</span>が必要な概念をひと目で確認、生徒が本物の定着力を築くのを見届ける &mdash; <strong>準備時間への負担はほぼゼロ、授業時間の追加もなし。</strong></p>
+        </div>
+        <div class="block">
+          <h3>校長・<span class="nb">IT管理者</span></h3>
+          <p>すでにあるインフラに数分で導入。生徒のメールも個人情報も収集せず、審査すべき<span class="nb">サードパーティー</span>のデータ処理者もなく、予算を食いつぶす<span class="nb">座席単位</span>のSaaS更新もありません。</p>
+        </div>
+        <div class="block">
+          <h3>生徒</h3>
+          <p>ストレスフルな<span class="nb">前夜</span>の詰め込みを、本当に身につく穏やかな<span class="nb">毎日数分</span>の習慣へ置き換え。すべてのテストに、内容をばっちり覚えた状態で臨めます。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>教室体験の内側</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="AnkiTovパイロット — 数学の定義デッキを、新規・学習中・期限の枚数付きで一覧表示するデッキブラウザ" loading="lazy">
+          <figcaption>
+            <strong>1. カリキュラムデッキライブラリ</strong>
+            <span class="nb">すぐ使える</span>主要教科に対応した多言語シードデッキ。標準的なAnki <code>.apkg</code>ファイル &mdash; インポートも簡単、教科横断で共有でき、拡張も自在。
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="単語grievousとその定義、次回間隔付きのAgain/Goodボタンが表示された解答済みカード" loading="lazy">
+          <figcaption>
+            <strong>2. <span class="nb">気が散らない</span>生徒レビュー</strong>
+            2つのシンプルなボタン（<em>Again</em> / <em>Good</em>）だけのすっきりしたキオスク復習画面。その裏には厳密なFSRSメモリースケジューリング。
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="クラス・生徒・シードデッキ、そしてリアルタイムのクラス全体定着ヒートマップを表示する教師用IMPコンソール" loading="lazy">
+          <figcaption>
+            <strong>3. 教師コンソール&amp;ライブ定着マップ</strong>
+            生徒の復習ログを<span class="nb">クラス全体</span>の定着ヒートマップへ集約 &mdash; 金曜の小テスト前に、失われかけた概念を見つけられます。
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="解答が表示されたヘブライ語右から左の数学カードとAgain/Goodボタン" loading="lazy">
+          <figcaption>
+            <strong>4. <span class="nb">第一級</span>の多言語&amp;RTL対応</strong>
+            英語、ヘブライ語、アラビア語、フランス語、スペイン語、そして13ロケール &mdash; <span class="nb">右から左</span>の文字体系も数式表記も、初期状態からきれいに描画。
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">ITディレクター・スクールリーダー向け</p>
+      <h2><span class="nb">学校パイロット</span>の運営に必要なもの</h2>
+      <div class="grid-3">
+        <div>
+          <h3><span class="nb">すでに持っている</span>どんなハードウェアでも</h3>
+          <p>校内LAN上の学校のMac 1台、Windows PC、Linuxマシンで動作 &mdash; または月$5のプライベートVPS。<span class="nb">学校のWi-Fi。</span>越しに200人以上の同時接続生徒を余裕で捌きます。</p>
+        </div>
+        <div>
+          <h3>シングルバイナリ、<span class="nb">依存ゼロ</span></h3>
+          <p>SQLite内蔵の<span class="nb">自己完結</span>実行ファイル1つ。外部DBサーバー不要、Docker不要、外向きのインターネット接続も不要。</p>
+        </div>
+        <div>
+          <h3><span class="nb">PIIゼロ</span>の監査体制</h3>
+          <p>生徒は匿名の<span class="nb">6文字</span>クラスコードで参加。生徒の名前、メール、デバイス識別子が校舎の外に出ることは一切ありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>認知科学はもう決着しています。学習者が<span class="nb">Ankiについて</span>語る言葉。</h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>「Ankiへの私の熱意を、中立を装った見栄えの良い仮面の後ろに隠すつもりはありません。Ankiは私の人生の重要な一部です。」</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>, <em>『Augmenting <span class="nb">Long-term Memory</span>』</em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>「間隔反復の記憶システムは、記憶を選択可能にする。」</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>, <em>Working notes</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>「このアプリは私の人生を変えました。Ankiのおかげで大学を卒業し、軍隊を除隊できました。このアプリのおかげで家族を養えました。」</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>, r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTovは、そのまさに同じ<span class="nb">人生を変える</span>エンジンを中学生・高校生へ &mdash; 学校が求めるクラス管理とプライバシーをまとって届けます。
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>AnkiTov<span class="nb">組織の活動</span></h2>
+      <ul class="bullets">
+        <li><strong>オープンなカリキュラム教材</strong> &mdash; 主要<span class="nb">K&ndash;12教科。</span>向けの多言語シードデッキと学習構造。</li>
+        <li><strong>教育者コミュニティ</strong> &mdash; 教室のワークフローを共有する教師、家庭教師、学習コーディネーター。</li>
+        <li><strong>オープンなツール&amp;標準</strong> &mdash; デッキ、スケジューリングアルゴリズム、生徒データはポータブルかつオープンソースのまま。</li>
+        <li><strong>研究の翻訳</strong> &mdash; 教師の負担を増やさずに検索練習を活用する<span class="nb">平易な言葉</span>のガイド。</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>あなたの教室<span class="nb">や学校</span>でAnkiTovをパイロット導入</h2>
+      <p>クラスパイロットの立ち上げ、最初のデッキのインポート、プライバシーアーキテクチャのレビューでお手伝いが必要ですか？</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/about.html">概要・ミッション</a>
+      <a href="/ja/community.html">コミュニティ</a>
+      <a href="/ja/tour.html">ツアー</a>
+      <a href="/ja/blog.html">ノート</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; AnkiTov Organization。教師とエンジニアの小さなコミュニティによって作られています。</p>
+    <p class="footer-note">AnkiTovは独立した<span class="nb">オープンソース</span>プロジェクトであり、<a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a>の開発元であるAnkitectsとは提携しておらず、推薦も受けていません。</p>
+    <p class="footer-note">Cookieなし &bull; トラッカーなし &bull; テレメトリなし &mdash; ただの間隔反復。</p>
+  </footer>
+</body>
+</html>

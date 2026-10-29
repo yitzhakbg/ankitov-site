@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סיור בפרויקט AnkiTov — מקצה לקצה, למפתחים ולתורמים</title>
+  <meta name="description" content="סיור מודרך בפרויקט AnkiTov: הארכיטקטורה בחמש שכבות, ה-Interleaved Mastery Pipeline, תרגול בדפדפן בלי התקנות, סנכרון באחסון עצמי, ואיך מריצים אותו לבד.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="סיור בפרויקט AnkiTov">
+  <meta property="og:description" content="סיור מודרך מקצה לקצה בפרויקט הקוד-פתוח AnkiTov, למפתחים ולתורמים.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/tour.html">
+  <meta property="og:image" content="https://ankitov.org/img/tour/community-infographic.png">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/he/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/he/about.html" class="nav-link">אודות</a>
+      <a href="/he/community.html" class="nav-link">קהילה</a>
+      <a href="/he/tour.html" class="nav-link is-active">סיור</a>
+      <a href="/he/blog.html" class="nav-link">רשימות</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/tour.html">English</option><option value="/fr/tour.html">Français</option><option value="/es/tour.html">Español</option><option value="/de/tour.html">Deutsch</option><option value="/it/tour.html">Italiano</option><option value="/pt/tour.html">Português</option><option value="/ru/tour.html">Русский</option><option value="/zh/tour.html">中文</option><option value="/ja/tour.html">日本語</option><option value="/ko/tour.html">한국어</option><option value="/hi/tour.html">हिन्दी</option><option value="/ar/tour.html">العربية</option><option value="/he/tour.html" selected>עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">סיור בפרויקט &bull; חינם ובקוד פתוח</p>
+      <h1><span class="nb">המערכת כולה</span>, מקצה לקצה.</h1>
+      <p class="hero-sub">סיור מודרך למפתחים ולתורמים: מהו AnkiTov, איך כל רכיב
+        עובד, ואיך מריצים אותו לבד — מהארכיטקטורה <span class="nb">בחמש שכבות</span>
+        ועד מפגש תרגול <span class="nb">המוזרם לדפדפן</span>.</p>
+      <div class="cta-group">
+        <a href="#map" class="cta">מתחילים מהמפה בתמונה אחת &blacktriangleright;</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov" class="cta-secondary" target="_blank" rel="noopener">עיינו בקוד המקור &larr;</a>
+      </div>
+    </section>
+
+    <section class="block" id="map">
+      <h2>המערכת בעמוד אחד</h2>
+      <p>כל רכיב מרכזי של AnkiTov ואיך הם מתחברים: הממשקים הפומביים, רמות המוצר,
+        הארכיטקטורה <span class="nb">מבפנים החוצה</span>, מסע התלמיד,
+        והיכן התוכנה רצה.</p>
+      <img src="/img/tour/community-infographic.png"
+           alt="אינפוגרפיקת הסיור הקהילתי של AnkiTov: ארכיטקטורה, צינור, סטרימינג, סנכרון, מפת דרכים"
+           loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #cbd5e1;">
+    </section>
+
+    <section class="block" id="materials">
+      <h2>הסיור, בכל פורמט</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>צפו בסיור הווידאו</h3>
+          <p>סיור עם קריינות על הפרויקט כולו — ארכיטקטורה, צינור, סטרימינג,
+            סנכרון, ואיך מצטרפים לתרום. פורסם בערוץ ה-YouTube שלנו.</p>
+          <p><a href="https://www.youtube.com/@AnkiTovApp" target="_blank" rel="noopener">צפו ב-YouTube &larr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>דפדפו במצגת</h3>
+          <p>מצגת הפתיחה: הבעיה, הדוקטרינה, הארכיטקטורה,
+            מסע התלמיד, מפת הדרכים, ואיפה מתחברים.</p>
+          <p><a href="/img/tour/community-slides.pdf">פתחו את המצגת (PDF) &larr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>שמרו את האינפוגרפיקה</h3>
+          <p>המפה הראשית <span class="nb">בתמונה אחת</span> — נוחה לקליטת תורמים חדשים
+            או לתלייה על קיר הצוות.</p>
+          <p><a href="/img/tour/community-infographic.png">צפו בגודל מלא &larr;</a></p>
+        </div>
+        <div class="pillar">
+          <h3>קראו את המדריך</h3>
+          <p>הסיור הכתוב <span class="nb">מקצה לקצה</span>: אותו סיפור לעומק, עם
+            מילון לכל מונח — הדרך המהירה ביותר ללמוד את שפת הפרויקט.</p>
+          <p><a href="/tour-guide.md">קראו את המדריך &larr;</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="deeper">
+      <h2>להעמקה</h2>
+      <ul class="bullets">
+        <li><strong>קוד המקור:</strong> <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">github.com/yitzhakbg/AnkiTov</a> — AGPL-3.0, עם חבילות פתיחה ב-CC0.</li>
+        <li><strong>תיעוד:</strong> אתר ה-mdBook מכסה את הארכיטקטורה, את ה-IMP ואת מדריך המפתח.</li>
+        <li><strong>מריצים:</strong> <span class="nb"><code>bash scripts/bootstrap.sh</code></span>, ואז
+          <span class="nb"><code>cd backend &amp;&amp; cargo run start</code></span>.</li>
+        <li><strong>חוקרים:</strong> לוח הבקרה
+          (<span class="nb"><code>/dashboard</code></span>) ותיעוד ה-API החי
+          (<span class="nb"><code>/scalar</code></span>) <span class="nb">מגיעים עם השרת</span>.</li>
+        <li><strong>קהילה:</strong> <a href="/he/community.html">תבניות חבילות, מיפויי תוכנית לימודים ועזרה בפיילוט</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/he/">ראשי</a>
+      <a href="/he/about.html">אודות ומשימה</a>
+      <a href="/he/community.html">קהילה</a>
+      <a href="/he/tour.html">סיור</a>
+      <a href="/he/blog.html">רשימות</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; ארגון AnkiTov. מחויבים ללמידה פתוחה <span class="nb">ומבוססת-מחקר</span>.</p>
+    <p class="footer-note">בלי עוגיות &bull; בלי כלי מעקב &bull; אספקה סטטית <span class="nb">פרטיות-קודם</span></p>
+  </footer>
+</body>
+</html>

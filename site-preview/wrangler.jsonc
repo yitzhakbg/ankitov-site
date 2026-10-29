@@ -1,0 +1,13 @@
+{
+  // ankitov-preview — TEMPORARY private preview of the full site (all 13 locales)
+  // on *.workers.dev. No DNS, no custom domains, independent of the production
+  // worker (white-rice-9fa6) and of SITE_LAUNCH_ENABLED. Delete after launch.
+  "name": "ankitov-preview",
+  "main": "gate.js",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "../site",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiTov — עזרו לתלמידים להתקדם. חזרות מרווחות לכיתה.</title>
+  <meta name="description" content="תלמידים לומדים מושג ביום ב׳, עוברים את המבחן ביום ו׳ — ובעוד 30 יום, 80% ממנו נעלם. AnkiTov מביא את Anki — מערכת החזרות המרווחות שתלמידים סומכים עליה — לבתי ספר בכיתות א׳–י״ב: כיתות, קונסולת מורים ופרטיות שמתוכננת בארכיטקטורה. כמעט בלי נטל על צוות ההוראה. בלי זמן שיעור נוסף.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=12">
+  <meta property="og:title" content="AnkiTov — עזרו לתלמידים להתקדם. חזרות מרווחות לכיתה.">
+  <meta property="og:description" content="מה שמלמדים בספטמבר עדיין שם במאי. AnkiTov מביא את Anki לכיתה — כמעט בלי נטל על צוות ההוראה, בלי זמן שיעור נוסף, ועולה לאוויר תוך דקות. חינם ובקוד פתוח.">
+  <meta property="og:image" content="https://ankitov.org/img/showcase-decks.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitov.org/">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/he/" class="brand">
+      <span>Anki<span class="brand-accent">Tov</span></span>
+      <span class="brand-badge">.org</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/he/about.html" class="nav-link">אודות</a>
+      <a href="/he/community.html" class="nav-link">קהילה</a>
+      <a href="/he/tour.html" class="nav-link">סיור</a>
+      <a href="/he/blog.html" class="nav-link">רשימות</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" class="nav-link" target="_blank" rel="noopener">GitHub</a>
+    <select data-lang-switch aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/fr/">Français</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/it/">Italiano</option><option value="/pt/">Português</option><option value="/ru/">Русский</option><option value="/zh/">中文</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/hi/">हिन्दी</option><option value="/ar/">العربية</option><option value="/he/" selected>עברית</option></select>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <p class="tagline">יוזמה קהילתית וחינוכית &bull; חינם ופתוח לבתי ספר</p>
+      <h1>עזרו לתלמידים שלכם <span class="nb">להתקדם</span> &mdash; <span class="nb">ולהישאר קדימה</span>.</h1>
+      <p class="hero-kicker">מה שמלמדים בספטמבר עדיין שם במאי.</p>
+      <p class="hero-sub">
+        AnkiTov מביא את <strong>Anki</strong> — מנוע החזרות המרווחות
+        שמיליוני סטודנטים לרפואה ופוליגלוטים סומכים עליו — אל כיתות א׳–י״ב,
+        עם רשימות כיתה, חבילות תוכן לתוכנית הלימודים וקונסולת מורים,
+        <span class="nb">ופרטיות שמתוכננת בארכיטקטורה.</span>
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">כמעט בלי נטל על צוות ההוראה</span>
+        <span class="hero-badge">בלי זמן שיעור נוסף</span>
+        <span class="hero-badge">עולה לאוויר תוך דקות</span>
+      </div>
+      <div class="cta-group">
+        <a href="#overview" class="cta">צפו ב<span class="nb">סקירה של דקה</span> &blacktriangleright;</a>
+        <a href="#how-it-works" class="cta-secondary">איך כיתה מתנהלת ב-3 שלבים</a>
+        <a href="https://github.com/yitzhakbg/AnkiTov/releases/latest" class="cta-secondary" target="_blank" rel="noopener">קבלו את AnkiTov &larr;</a>
+      </div>
+    </section>
+
+    <!-- ═══ The problem — in all its ugly glory ═══ -->
+    <section class="problem" id="problem">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--warn">המציאות בכיתה</p>
+        <h2>הבעיה, בכל תפארתה המכוערת</h2>
+        <p class="section-lead">
+          תלמידים לומדים מושג ביום ב׳, עוברים בוחן ביום ו׳ &mdash;
+          <strong>ואחרי <span class="nb">30 יום</span>, עד 80% ממנו נעלם.</strong> לא בגלל
+          שהמורים לא לימדו, ולא בגלל שהתלמידים לא ניסו. פשוט ככה
+          דועך הזיכרון האנושי בלי שליפה מתוזמנת.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-num">01</span>
+          <h3>מלמדים, בוחנים, נעלם</h3>
+          <p>תלמידים משננים בלילה של יום ה׳, עוברים ביום ו׳, ומתרוקנים חודש אחרי &mdash; בדיוק כשהיחידה הבאה נשענת על אותם יסודות.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">02</span>
+          <h3>טחנת <span class="nb">ההישנות</span></h3>
+          <p>שבועות של זמן שיעור יקר נבלעים ב<span class="nb">הסברים חוזרים</span> על חומר שכבר &ldquo;כוסה&rdquo; בספטמבר. הקצב מתפרק; נושאים מתקדמים נגזרים.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">03</span>
+          <h3>למה כלים מוכחים עוד לא הגיעו ל<span class="nb">כיתות א׳–י״ב</span></h3>
+          <p>מדעי הקוגניציה פתרו את נושא השימור עוד לפני עשורים, עם חזרות מרווחות (SRS). אבל כלים למבוגרים לבד, כמו Anki הגולמית, לא נבנו ל-30 תלמידי <span class="nb">כיתה ח׳</span>, לסילבוס בית-ספרי, או לחלון ההכנה של <span class="nb">45 דקות</span> של מורה.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-num">04</span>
+          <h3>EdTech מסחרי מחמיר את הבעיה</h3>
+          <p>מנויים <span class="nb">לפי משתמש</span>, <span class="nb">הרשמות</span> במייל של תלמידים, רשתות פרסום, והיסטוריות למידה שמוזרמות לעננים של <span class="nb">צד ג׳</span> &mdash; שדה מוקשים משפטי ואתי ל<span class="nb">מנהלי בתי הספר.</span></p>
+        </div>
+      </div>
+
+      <div class="problem-bridge">
+        <p>
+          <strong>בתי הספר לא דחו את מדע הזיכרון.</strong>
+          הם פשוט לא קיבלו תשתית כיתתית שמכבדת את זמן המורה,
+          את הלוגיסטיקה של ניהול הכיתות ואת פרטיות התלמידים. <em>AnkiTov נבנה בדיוק כדי להיות <span class="nb">השכבה החסרה הזאת.</span></em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Video opener — 60s overview ═══ -->
+    <section class="video-opener" id="overview">
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="/img/poster-overview.png?v=3" src="/img/overview.mp4?v=3"></video>
+        <figcaption>
+          <strong><span class="nb">סקירת הדקה</span>.</strong>
+          למה שינון ברגע האחרון מתאדה, איך שליפה מרווחת קובעת ידע בזיכרון, ואיך AnkiTov רץ בבית ספר אמיתי &mdash; בלי חשבונות תלמידים ובלי מעקב.
+        </figcaption>
+      </figure>
+
+      <figure class="decay-visual" aria-label="תרשים מונפש: הזיכרון דוהה מהר בלי חזרות, אבל כל חזרה קצרה מחדשת אותו — כך שתלמידים מגיעים למבחן כשהחומר עדיין אצלם.">
+        <svg viewBox="0 0 800 340" role="img" aria-hidden="true">
+          <g stroke="#1d3a2c" stroke-width="1">
+            <line x1="70" y1="60" x2="760" y2="60"/>
+            <line x1="70" y1="130" x2="760" y2="130"/>
+            <line x1="70" y1="200" x2="760" y2="200"/>
+            <line x1="70" y1="270" x2="760" y2="270"/>
+          </g>
+          <line x1="70" y1="30" x2="70" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <line x1="70" y1="300" x2="760" y2="300" stroke="#5b7a6b" stroke-width="2"/>
+          <text x="26" y="170" fill="#9db8ab" font-size="15" transform="rotate(-90 26 170)" text-anchor="middle">מה התלמידים זוכרים</text>
+          <text x="415" y="326" fill="#9db8ab" font-size="15" text-anchor="middle">זמן &rarr;</text>
+          <text x="70" y="318" fill="#7d998c" font-size="13" text-anchor="middle">יום 1</text>
+          <text x="300" y="318" fill="#7d998c" font-size="13" text-anchor="middle">שבוע 1</text>
+          <text x="530" y="318" fill="#7d998c" font-size="13" text-anchor="middle">שבוע 3</text>
+          <text x="740" y="318" fill="#7d998c" font-size="13" text-anchor="middle">מבחן</text>
+          <path class="decay-line-without" d="M70,60 C120,120 180,170 260,210 C340,245 450,268 560,280 C630,287 700,290 760,292" fill="none" stroke="#ff6b5e" stroke-width="3.5" stroke-linecap="round"/>
+          <path class="decay-line-with" d="M70,60 C110,100 150,125 180,140 L186,72 C220,105 290,140 330,160 L336,82 C400,120 470,155 520,170 L526,88 C600,100 690,110 760,120" fill="none" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"/>
+          <circle class="decay-dot d1" cx="180" cy="140" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d2" cx="330" cy="160" r="7" fill="#ffd166"/>
+          <circle class="decay-dot d3" cx="520" cy="170" r="7" fill="#ffd166"/>
+          <text class="decay-label" x="180" y="118" fill="#ffd166" font-size="14" text-anchor="middle">חזרה של 2 דקות</text>
+          <text class="decay-label" x="330" y="138" fill="#ffd166" font-size="14" text-anchor="middle">חזרה של 2 דקות</text>
+          <text class="decay-label" x="520" y="148" fill="#ffd166" font-size="14" text-anchor="middle">חזרה של 2 דקות</text>
+          <text class="decay-label" x="752" y="108" fill="#3ddc84" font-size="15" text-anchor="end" font-weight="bold">עם AnkiTov: עדיין זוכרים</text>
+          <text class="decay-label" x="752" y="282" fill="#ff8f85" font-size="15" text-anchor="end">בלי: רובו נעלם</text>
+          <text class="decay-label" x="88" y="52" fill="#cfe3d8" font-size="14">השיעור נלמד</text>
+        </svg>
+        <div class="decay-legend">
+          <span class="key"><span class="swatch with"></span>עם חזרות קצרות של AnkiTov</span>
+          <span class="key"><span class="swatch without"></span>שינון חד-פעמי, ואז כלום</span>
+          <span class="key"><span class="swatch review"></span>חזרה <span class="nb">של 2 דקות</span> מחזירה את הזיכרון</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ═══ How easy the solution is (3 steps) ═══ -->
+    <section class="ease" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">אימוץ בלי מאמץ</p>
+        <h2>איך AnkiTov פותר את זה &mdash; בדקות, לא בחודשים</h2>
+        <p class="section-lead section-lead--full">
+          מעוצב לפי המציאות בכיתה:<br>
+          <span class="nb">אפס שיעורים נוספים לתכנן,</span>
+          <span class="nb">אפס חשבונות אישיים לתחזק,</span>
+          <span class="nb">ואפס שינוי בצורה שבה אתם מלמדים.</span>
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-badge">שלב 1 &bull; כ-2 דקות</div>
+          <h3>מוסיפים חבילת כרטיסים ומחלקים <span class="nb">קוד כיתה</span> <span class="nb">בן 6 אותיות</span></h3>
+          <p>מייבאים כל <span class="nb">חבילת Anki <code>.apkg</code> סטנדרטית</span> &mdash; או <span class="nb">מתחילים מיד</span> עם חבילות הפתיחה הפתוחות שלנו לתוכנית הלימודים. מקצים לכיתה <span class="nb">בשתי לחיצות.</span> בלי מיילים של תלמידים, בלי סיסמאות, ובלי <span class="nb">פניות ל-IT.</span></p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">שלב 2 &bull; דקות ביום</div>
+          <h3>בבית, באוטובוס, או כ<span class="nb">פעילות פתיחה</span> של <span class="nb">פחות מ-15 דקות</span></h3>
+          <p>תלמידים מתרגלים בבית או בזמן <span class="nb">פעילות הפתיחה</span>, בזמן שאתם עושים נוכחות &mdash; <span class="nb">פחות מ-15 דקות</span> ביום.<br>המתזמן של FSRS מעלה רק את הכרטיסים שעומדים להישכח &mdash; ושוזר את היסודות מספטמבר יחד עם היחידה של השבוע.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-badge">שלב 3 &bull; מבט לפני השיעור</div>
+          <h3>מזהים פערים <span class="nb">ברמת הכיתה</span> לפני <span class="nb">הבוחן ביום שישי</span></h3>
+          <p>קונסולת המורים הופכת יומני תרגול אישיים לתמונת שימור חיה. אם חצי מהכיתה מחליקה על נוסחה מסוימת או על אוצר מילים מסוים, רואים את זה מיד &mdash; ומקדישים לזה שתי דקות, לא <span class="nb">שבועיים של הישנות.</span></p>
+        </div>
+      </div>
+
+      <div class="seed-strip">
+        <div class="seed-strip-head">
+          <strong><span class="nb">מוכנות להרצה מיד</span> — חבילות פתיחה פתוחות (נחלת הכלל CC0 &bull; 105 כרטיסים כל אחת):</strong>
+          <span>מתאימות ישר לפיילוט כיתתי או להתאמה אישית ב-Anki:</span>
+        </div>
+        <div class="seed-pills">
+          <span class="seed-pill">הגדרות מתמטיקה (EN &amp; HE)</span>
+          <span class="seed-pill">מונחי מדעים (EN &amp; HE)</span>
+          <span class="seed-pill">היסטוריה: תאריכים ודמויות (EN &amp; FR)</span>
+          <span class="seed-pill">אוצר מילים אקדמי באנגלית</span>
+          <span class="seed-pill">+ כל חבילת Anki <code>.apkg</code> סטנדרטית</span>
+        </div>
+      </div>
+
+      <div class="compare-strip">
+        <div class="compare-col compare-col--before">
+          <h3>בלי תרגול מרווח</h3>
+          <ul>
+            <li>שינון ביום ה׳ &larr; עוברים ביום ו׳ &larr; שוכחים בחודש שאחרי</li>
+            <li>שבועות שלמים נבלעים בחבילות חזרה למבחני אמצע וסוף</li>
+            <li>מגלים מי נשאר מאחור <em>אחרי</em> שהמבחן כבר מתוקנן</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--after">
+          <h3>עם AnkiTov לצד ההוראה שלכם</h3>
+          <ul>
+            <li>דקות ביום שומרות על כל <span class="nb">יחידה קודמת</span> <span class="nb">חמה כל השנה</span></li>
+            <li>אפס זמן שיעור נוסף &mdash; רץ בשקט לצד השיעורים שלכם</li>
+            <li>תלמידים מגיעים ליחידות המתקדמות כשהיסודות כבר שלוטים אצלם</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Three pillars ═══ -->
+    <section class="pillars">
+      <h2>שלוש ערבויות לכל בית ספר</h2>
+      <div class="grid-3">
+        <div class="pillar">
+          <h3>שימור <span class="nb">שמצטבר</span></h3>
+          <p>מונע על ידי תזמון FSRS מודרני. תלמידים חוזרים על כל מושג בדיוק לפני שהוא דוהה &mdash; וכך <span class="nb">שינון לטווח קצר</span> הופך ל<span class="nb">שליטה יציבה לאורך שנה.</span></p>
+        </div>
+        <div class="pillar">
+          <h3>פרטיות <span class="nb">שמתוכננת בארכיטקטורה</span></h3>
+          <p>אפס מידע אישי מזהה, אפס כלי מעקב, אפס טלמטריה, אפס קריאות יוצאות לענן &mdash; נתוני התלמידים לעולם לא עוזבים את בית הספר. עמידה ברגולציה מעוצבת מראש, לא באותיות הקטנות.</p>
+        </div>
+        <div class="pillar">
+          <h3>פורמט פתוח, <span class="nb">בלי נעילת ספק</span></h3>
+          <p>החבילות הן קבצי <code>.apkg</code> סטנדרטיים &mdash; הפורמט הפתוח של האקוסיסטם של Anki. חומרי הלימוד והיסטוריית הלמידה שייכים לבית הספר שלכם, לתמיד.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Who is it for ═══ -->
+    <section class="audience">
+      <h2>בנוי לכל תפקיד בבית הספר</h2>
+      <div class="grid-3">
+        <div class="block">
+          <h3>מורים ו<span class="nb">רכזי מקצוע</span></h3>
+          <p>משחררים כרטיסים בקצב של תוכנית הלימודים שלכם, רואים אילו מושגים דורשים חזרה של <span class="nb">שתי דקות</span>, ורואים תלמידים בונים שליטה אמיתית &mdash; <strong>כמעט בלי נטל על זמן ההכנה שלכם ובלי זמן שיעור נוסף.</strong></p>
+        </div>
+        <div class="block">
+          <h3>מנהלים ו<span class="nb">מנהלי IT</span></h3>
+          <p>מותקן תוך דקות על תשתית שכבר יש לכם. בלי מיילים של תלמידים ובלי איסוף מידע אישי, בלי מעבדי נתונים של <span class="nb">צד ג׳</span> לאישור, ובלי חידושי מנויים <span class="nb">לפי משתמש</span> שאוכלים את התקציב.</p>
+        </div>
+        <div class="block">
+          <h3>תלמידים</h3>
+          <p>מחליפים שינון לחוץ <span class="nb">בלילה שלפני</span> בהרגל רגוע של <span class="nb">דקות ביום</span> שבאמת נשאר. נכנסים לכל מבחן כשהחומר כבר בשליטה מלאה.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Showcase — real screenshots + teacher console ═══ -->
+    <section class="showcase">
+      <h2>מבט מבפנים על החוויה בכיתה</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="/img/showcase-decks.png" alt="סייר החבילות מציג את חבילת הגדרות המתמטיקה של AnkiTov Pilot עם מוני כרטיסים חדשים, בלמידה ולחזרה" loading="lazy">
+          <figcaption>
+            <strong>1. ספריית חבילות תוכן</strong>
+            <span class="nb">מוכנות לשימוש</span> — חבילות פתיחה רב-לשוניות המיושרות למקצועות הליבה. קבצי Anki <code>.apkg</code> סטנדרטיים &mdash; קלים לייבוא, לשיתוף בין רכזי מקצוע ולהרחבה.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-answer.png" alt="כרטיס שנענה המציג את המילה grievous, את ההגדרה שלה ואת הכפתורים Again ו-Good עם המרווחים הבאים" loading="lazy">
+          <figcaption>
+            <strong>2. תרגול תלמידים <span class="nb">ללא הסחות דעת</span></strong>
+            מסך תרגול נקי עם שני כפתורים פשוטים (<em>Again</em> / <em>Good</em>) ומתחתיו תזמון זיכרון FSRS מחמיר.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-console.png" alt="קונסולת ה-IMP למורים המציגה כיתות, תלמידים, חבילות פתיחה ומפת חום חיה של שימור ברמת הכיתה" loading="lazy">
+          <figcaption>
+            <strong>3. קונסולת מורים ומפת שימור חיה</strong>
+            מאגד את יומני התרגול של התלמידים למפת חום שימור <span class="nb">ברמת הכיתה</span> &mdash; כך מזהים מושגים שדוהים לפני הבוחן של יום שישי.
+          </figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="/img/showcase-hebrew.png" alt="כרטיס מתמטיקה בעברית מימין לשמאל עם התשובה חשופה והכפתורים Again ו-Good" loading="lazy">
+          <figcaption>
+            <strong>4. רב-לשוניות ו-RTL <span class="nb">ברמה ראשונה</span></strong>
+            אנגלית, עברית, ערבית, צרפתית, ספרדית ו-13 לוקלים &mdash; כתב <span class="nb">מימין לשמאל</span> וסימון מתמטי מוצגים נקי כבר מההתחלה.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══ IT & Principal Pilot Box (Suggestion 3) ═══ -->
+    <section class="block it-box">
+      <p class="eyebrow">למנהלי IT ולהנהגת בית הספר</p>
+      <h2>מה צריך כדי להריץ <span class="nb">פיילוט בית ספרי</span></h2>
+      <div class="grid-3">
+        <div>
+          <h3>כל חומרה <span class="nb">שכבר יש לכם</span></h3>
+          <p>רץ על מק אחד של בית הספר, מחשב Windows או שרת Linux ברשת המקומית &mdash; או על VPS פרטי ב-5$ לחודש. משרת בקלות 200+ תלמידים במקביל דרך <span class="nb">ה-Wi-Fi של בית הספר.</span></p>
+        </div>
+        <div>
+          <h3>קובץ הרצה אחד, <span class="nb">בלי תלות חיצונית</span></h3>
+          <p>קובץ הרצה <span class="nb">עצמאי לגמרי</span> עם SQLite מוטמע. בלי שרת מסד נתונים חיצוני, בלי צורך ב-Docker, ובלי גישת אינטרנט יוצאת.</p>
+        </div>
+        <div>
+          <h3>גישת ביקורת עם <span class="nb">אפס PII</span></h3>
+          <p>תלמידים מצטרפים דרך קוד כיתה אנונימי <span class="nb">בן 6 אותיות</span>. שמות תלמידים, מיילים או מזהי מכשירים לעולם לא עוזבים את הבניין שלכם.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Anki quotes — verified verbatim 2026-10-22 (see specs/launch/2026-10-22-anki-quotes.md) ═══ -->
+    <section class="quotes">
+      <h2>המדע הקוגניטיבי הוכרע. הנה מה שלומדים אומרים <span class="nb">על Anki.</span></h2>
+      <div class="quote-strip">
+        <blockquote class="quote">
+          <p>&ldquo;לא אנסה להסתיר את ההתלהבות שלי מ-Anki מאחורי חזות מכובדת של נייטרליות: Anki הוא חלק משמעותי מהחיים שלי.&rdquo;</p>
+          <cite>&mdash; <a href="https://augmentingcognition.com/ltm.html" target="_blank" rel="noopener">Michael Nielsen</a>, <em>Augmenting <span class="nb">Long-term Memory</span></em></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>&ldquo;מערכות זיכרון מבוססות חזרות מרווחות הופכות את הזיכרון לבחירה.&rdquo;</p>
+          <cite>&mdash; <a href="https://notes.andymatuschak.org/zSTqsQ4ATXB61k3Z43TforN" target="_blank" rel="noopener">Andy Matuschak</a>, <em>Working notes</em></cite>
+        </blockquote>
+        <blockquote class="quote quote--wide">
+          <p>&ldquo;האפליקציה הזאת שינתה את החיים שלי. בזכות Anki סיימתי תואר והשתחררתי מהצבא. בזכות האפליקציה הזאת הצלחתי לפרנס את המשפחה שלי.&rdquo;</p>
+          <cite>&mdash; <a href="https://www.reddit.com/r/Anki/comments/1iaopkc/anyone_else_just_really_grateful_for_this_app/" target="_blank" rel="noopener">u/Historical_Wash_1114</a>, r/Anki</cite>
+        </blockquote>
+      </div>
+      <p class="quotes-pivot">
+        AnkiTov מביא בדיוק את אותו מנוע <span class="nb">משנה חיים</span> לתלמידי חטיבות הביניים והתיכון &mdash; עטוף בניהול הכיתות ובפרטיות שבית ספר מחייב.
+      </p>
+    </section>
+
+    <!-- ═══ What we do ═══ -->
+    <section class="block">
+      <h2>מה <span class="nb">ארגון AnkiTov</span> עושה</h2>
+      <ul class="bullets">
+        <li><strong>חומרי לימוד פתוחים</strong> &mdash; חבילות פתיחה רב-לשוניות ומבני למידה למקצועות הליבה של <span class="nb">כיתות א׳–י״ב.</span></li>
+        <li><strong>קהילת מחנכים</strong> &mdash; מורים, חונכים ורכזי הוראה שמחליפים שגרות עבודה מהכיתה.</li>
+        <li><strong>כלים וסטנדרטים פתוחים</strong> &mdash; חבילות, אלגוריתמי תזמון ונתוני תלמידים נשארים ניידים ובקוד פתוח.</li>
+        <li><strong>תרגום מחקר לפרקטיקה</strong> &mdash; מדריכים <span class="nb">בשפה פשוטה</span> ליישום תרגול שליפה בלי להוסיף נטל על המורים.</li>
+      </ul>
+    </section>
+
+    <!-- ═══ Connect ═══ -->
+    <section class="contact">
+      <h2>מריצים פיילוט AnkiTov בכיתה <span class="nb">או בבית הספר</span> שלכם</h2>
+      <p>רוצים עזרה בהקמת פיילוט כיתתי, בייבוא החבילה הראשונה או בסקירת ארכיטקטורת הפרטיות שלנו?</p>
+      <p><a href="mailto:hello@ankitov.org" class="mail">hello@ankitov.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/he/">ראשי</a>
+      <a href="/he/about.html">אודות ומשימה</a>
+      <a href="/he/community.html">קהילה</a>
+      <a href="/he/tour.html">סיור</a>
+      <a href="/he/blog.html">רשימות</a>
+      <a href="https://github.com/yitzhakbg/AnkiTov" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p>&copy; ארגון AnkiTov. נבנה על ידי קהילה קטנה של מחנכים ומהנדסים.</p>
+    <p class="footer-note">AnkiTov הוא פרויקט <span class="nb">קוד פתוח</span> עצמאי &mdash; אינו קשור ל-Ankitects, יוצרי <a href="https://apps.ankiweb.net" target="_blank" rel="noopener">Anki</a>, ואינו מאושר על ידם.</p>
+    <p class="footer-note">בלי עוגיות &bull; בלי כלי מעקב &bull; בלי טלמטריה &mdash; רק חזרות מרווחות.</p>
+  </footer>
+</body>
+</html>
