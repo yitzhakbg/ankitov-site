@@ -107,7 +107,7 @@ DETECT_JS = r"""
       const re = /\S+/g;
       let m;
       while ((m = re.exec(node.textContent))) {
-        words.push({node, start: m.index, end: m.index + m[0].length});
+        words.push({node, start: m.index, end: m.index + m[0].length, t: m[0]});
       }
     }
     if (words.length < 2) continue;
@@ -117,8 +117,12 @@ DETECT_JS = r"""
       range.setStart(w.node, w.start);
       range.setEnd(w.node, w.end);
       const rects = range.getClientRects();
-      if (!rects.length) { tops.push(null); continue; }
+      if (!rects.length) { tops.push(null); w.top = null; continue; }
       tops.push(rects[0].top);
+      w.top = rects[0].top;
+      w.left = rects[0].left;
+      w.right = rects[0].right;
+      w.width = rects[0].width;
     }
     // Cluster word tops into rendered lines (within 3px).
     const lines = [];
@@ -130,6 +134,53 @@ DETECT_JS = r"""
     }
     lines.sort((a, b) => a.top - b.top);
     if (lines.length < 2) continue;
+    const lineIdxOf = w => (w.top === null ? -1 : lines.findIndex(L => Math.abs(L.top - w.top) < 3));
+
+    // ---- Class 3: sentence-split orphan (owner rule 2026-11-05) ----
+    // A sentence that starts partway along a line, spills onto the next
+    // line, and would fit entirely on a single line — it should have
+    // started on the next line. Fix doctrine: wrap the whole sentence in
+    // <span class="nb"> (nowrap) so it moves to the next line as a unit.
+    {
+      const contentW = el.clientWidth
+        - (parseFloat(style.paddingLeft) || 0) - (parseFloat(style.paddingRight) || 0);
+      // space-width estimate: first measurable same-line adjacent gap
+      let space = 0;
+      for (let i = 0; i + 1 < words.length; i++) {
+        if (words[i].top === null || words[i + 1].top === null) continue;
+        if (lineIdxOf(words[i]) === lineIdxOf(words[i + 1]) && words[i + 1].left > words[i].right) {
+          space = words[i + 1].left - words[i].right;
+          break;
+        }
+      }
+      if (!space) space = (parseFloat(style.fontSize) || 16) * 0.25;
+      const pushSentence = (a, b) => {
+        if (b - a < 1) return;                                    // need >= 2 words
+        if (lineIdxOf(words[a]) === lineIdxOf(words[b])) return;  // already one line
+        if (a === 0 || lineIdxOf(words[a - 1]) !== lineIdxOf(words[a])) return; // must start mid-line
+        let wsum = 0;
+        for (let i = a; i <= b; i++) wsum += (words[i].width || 0);
+        if (wsum + (b - a) * space > contentW) return;            // would not fit on one line
+        range.setStart(words[a].node, words[a].start);
+        range.setEnd(words[b].node, words[b].end);
+        out.push({
+          kind: 'sentence-split',
+          tag: el.tagName.toLowerCase(),
+          cls: (el.className || '').toString().slice(0, 80),
+          text: el.textContent.trim().replace(/\s+/g, ' ').slice(0, 140),
+          orphan: range.toString().trim().replace(/\s+/g, ' ').slice(0, 90)
+        });
+      };
+      let s = 0;
+      for (let i = 0; i < words.length; i++) {
+        if (/[.!?…]["')\]]?$/.test(words[i].t) || i === words.length - 1) {
+          pushSentence(s, i);
+          s = i + 1;
+        }
+      }
+    }
+
+    // ---- Class 1/2: single-word last rendered line ----
     const last = lines[lines.length - 1];
     if (last.count !== 1) continue;
     let idx = 0;
@@ -241,7 +292,7 @@ def report(findings: list[dict], widths: list[int], pages: list[str]) -> None:
     if not findings:
         print(f"NO ORPHANS — {len(pages)} page(s) x {widths} widths: clean")
         return
-    print(f"ORPHANS FOUND: {len(findings)} element(s) end on a single word\n")
+    print(f"ORPHANS FOUND: {len(findings)} finding(s) (single-word last line or sentence-split)\n")
     for e in findings:
         w = ",".join(str(x) for x in sorted(e["widths"]))
         print(f"{e['page']} [{w}px] <{e['tag']} class={e['cls']!r}> orphan={e['orphan']!r}")
